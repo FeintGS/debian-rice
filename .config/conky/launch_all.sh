@@ -1,0 +1,5 @@
+#!/bin/bash
+conky -dq -c $HOME/.config/conky/system_rc
+conky -dq -c $HOME/.config/conky/processes_rc
+conky -dq -c $HOME/.config/conky/todolist_rc
+conky -dq -c $HOME/.config/conky/time_rc
