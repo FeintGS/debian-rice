@@ -1,3 +1,4 @@
+#!/bin/bash
 export PATH="/usr/local/sbin:/sbin:/usr/sbin:$PATH"
 export PATH="$PATH:/usr/bin:/usr/local/bin/"
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -20,3 +21,8 @@ alias drive='firefox https://drive.google.com'
 alias twitter='firefox https://twitter.com'
 alias youtube='firefox https://youtube.com'
 alias reddit='firefox https://reddit.com'
+
+alias apt='sudo apt'
+
+# SSH session manager
+exec keychain &
