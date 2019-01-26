@@ -1,0 +1,13 @@
+#!/bin/sh
+
+rm -f /tmp/locked.png
+
+# If `imagemagick` is not installed, use a blank screen.
+[ -f /usr/bin/convert ] &&
+scrot -m -z /tmp/base.png &&
+notify-send -u low "Locking..." -t 500 &&
+convert /tmp/base.png -blur 0x8 /tmp/locked.png &&
+i3lock -e -f -c 000000 -i /tmp/locked.png ||
+notify-send -u critical "Lock failed(!)"
+
+mpc pause >/dev/null 2>&1
