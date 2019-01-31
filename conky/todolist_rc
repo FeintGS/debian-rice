@@ -2,16 +2,16 @@ background no
 font sans:size=10
 #xftfont sans:size=10
 use_xft yes
-xftalpha 0.9
+xftalpha 0.5
 update_interval 5
 imlib_cache_size 0
 total_run_times 0
 own_window yes
 own_window_type override
-#own_window_transparent yes
+own_window_transparent yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 own_window_argb_visual true
-own_window_argb_value 180
+own_window_argb_value 100
 own_window_colour 0f0f0f
 double_buffer yes
 minimum_size 225
@@ -30,10 +30,10 @@ uppercase no
 border_inner_margin 15
 
 #colors
-color1 96A0DF
+color1 3f3f3f
 color2 aaa
-color3 ddd
+color3 3f3f3f
 
 TEXT
 ${color1}${font Oswald:size=10:bold}TODO LIST${color2} ${hr 2}
-${color3}${font M+ 1c:size=10}${exec cat $HOME/.config/conky/list-todo | sed 's/\[x\]/☑/g' | sed 's/\[\]/☐/g'}
+${color3}${font M+ 1c:size=10}${exec echo -n "$(cat $HOME/.config/conky/list-todo | head -n 5 | sed 's/\[x\]/☑/g' | sed 's/\[\]/☐/g')"}
