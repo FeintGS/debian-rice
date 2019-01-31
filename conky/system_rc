@@ -35,8 +35,8 @@ color2 aaa
 color3 eee
 
 TEXT
-${color1}${font M+ 1p:size=10:bold}SYSTEM ${color2} ${hr 2}
-${color3}${font M+ 1c:size=9}
+${color1}${font M+ 1p:size=12:bold}SYSTEM ${color2} ${voffset 2}${hr 2}
+${color3}${font M+ 1c:size=9}\
 Hostname: $alignr$nodename
 Distribution: $alignr${exec cat /etc/issue.net}
 Kernel: $alignr$kernel
