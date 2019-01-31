@@ -2,7 +2,7 @@ background no
 font sans:size=10
 #xftfont sans:size=10
 use_xft yes
-xftalpha 0.5
+xftalpha 0.9
 update_interval 1
 imlib_cache_size 0
 total_run_times 0
@@ -30,7 +30,7 @@ uppercase no
 border_inner_margin 15
 
 #colors
-color1 96A0DF
+color1 ff8c00
 color2 aaa
 color3 ddd
 
