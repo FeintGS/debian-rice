@@ -1,7 +1,3 @@
-#rounded corners
-lua_load ~/.config/conky/draw_bg.lua
-lua_draw_hook_pre draw_bg
-
 background yes
 font sans:size=10
 #xftfont sans:size=10
@@ -12,13 +8,13 @@ imlib_cache_size 0
 total_run_times 0
 own_window yes
 own_window_type override
-own_window_transparent no
+own_window_transparent yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 own_window_argb_visual true
-own_window_argb_value 160
+own_window_argb_value 100
 own_window_colour 0f0f0f
 double_buffer yes
-minimum_size 250
+minimum_size 200
 draw_shades no
 draw_outline no
 draw_borders no
@@ -26,8 +22,8 @@ draw_graph_borders yes
 default_color 101010
 default_shade_color 101010
 alignment top_right
-gap_x 21
-gap_y 60
+gap_x 23
+gap_y 65
 no_buffers yes
 cpu_avg_samples 1
 uppercase no
@@ -37,6 +33,11 @@ border_inner_margin 15
 color1 ff8c00
 color2 aaa
 color3 eee
+
+#rounded corners
+lua_load /home/feint/.config/conky/conky-draw_bg.lua
+lua_draw_hook_pre draw_bg
+imlib_cache_size 0
 
 TEXT
 ${color1}${font M+ 1p:size=12:bold}SYSTEM ${color2} ${voffset 2}${hr 2}
@@ -57,7 +58,7 @@ ${color3}CPU3: ${cpu cpu3}% ${alignr}${color1}${cpubar cpu3 6,140}
 ${color3}CPU4: ${cpu cpu3}% ${alignr}${color1}${cpubar cpu4 6,140}
 
 ${color3}Top Processes:
-${font Terminus:size=10}Name: $alignr PID     CPU     MEM  
+${font Terminus:size=10}Name: $alignr PID\#    CPU%    MEM%  
 ${top name 1} $alignr ${top pid 1}  ${top cpu 1}  ${top mem 1}  
 ${top name 2} $alignr ${top pid 2}  ${top cpu 2}  ${top mem 2}  
 ${top name 3} $alignr ${top pid 3}  ${top cpu 3}  ${top mem 3}  
@@ -68,6 +69,5 @@ ${top name 7} $alignr ${top pid 7}  ${top cpu 7}  ${top mem 7}
 ${top name 8} $alignr ${top pid 8}  ${top cpu 8}  ${top mem 8}  
 ${top name 9} $alignr ${top pid 9}  ${top cpu 9}  ${top mem 9}  
 ${top name 10} $alignr ${top pid 10}  ${top cpu 10}  ${top mem 10}  
-
-${color1}${font M+ 1p:size=12:bold}TODO LIST${color2} ${voffset 2}${hr 2}
-${color3}${font M+ 1c:size=10}${exec echo -n "$(cat $HOME/.config/conky/list-todo | head -n 5 | sed 's/\[x\]/☑/g' | sed 's/\[\]/☐/g')"}
+#${color1}${font M+ 1p:size=12:bold}TODO LIST${color2} ${voffset 2}${hr 2}
+#${color3}${font M+ 1c:size=10}${exec echo -n "$(cat $HOME/.config/conky/list-todo | head -n 5 | sed 's/\[x\]/☑/g' | sed 's/\[\]/☐/g')"}

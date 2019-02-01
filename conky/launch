@@ -1,0 +1,3 @@
+#!/bin/bash
+pkill conky
+conky -dq -c $HOME/.config/conky/system_rc

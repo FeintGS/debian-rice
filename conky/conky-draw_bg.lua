@@ -13,12 +13,12 @@ Changelog:
 -- Change these settings to affect your background.
 -- "corner_r" is the radius, in pixels, of the rounded corners. If you don't want rounded corners, use 0.
 
-corner_r=11
+corner_r=15
 
 -- Set the colour and transparency (alpha) of your background.
 
 bg_colour=0x131416
-bg_alpha=0.80
+bg_alpha=0.45
 
 require 'cairo'
 function rgb_to_r_g_b(colour,alpha)
