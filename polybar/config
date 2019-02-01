@@ -59,8 +59,8 @@ modules-left = i3
 modules-center =
 modules-right = xbacklight alsa battery-combined-udev memory cpu temperature wlan network date
 
-tray-position = right
-tray-padding = 2
+;tray-position = right
+;tray-padding = 2
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -274,11 +274,11 @@ label-disconnected-foreground = ${colors.foreground-alt}
 type = internal/date
 interval = 5
 
-date = " %Y-%m-%d"
+date = " %A, %B %d, %Y"
 date-alt = " %Y-%m-%d"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = %I:%M %p
+time-alt = %H:%M
 
 format-prefix = ""
 format-prefix-foreground = ${colors.foreground}
@@ -439,6 +439,6 @@ screenchange-reload = true
 
 [global/wm]
 margin-top = 5
-margin-bottom = 5
+margin-bottom = 0
 
 ; vim:ft=dosini
