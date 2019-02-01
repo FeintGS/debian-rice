@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
 
-# Terminate running instances
 pkill compton
-
-# Wait until the processes have been shut down
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-
-# Relaunch
 compton --config $HOME/.config/compton/compton.conf
