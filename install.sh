@@ -5,3 +5,13 @@ libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-iccc
 
 # a2x without the entire 800MiB asciidoc package
 apt-get --no-install-recommends install asciidoc xmlto -y
+
+# out2html utility
+git clone https://github.com/DaveDavenport/out2html
+cd out2html
+autoreconf -i
+mkdir build
+cd build
+../configure
+make
+sudo make install
