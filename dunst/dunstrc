@@ -29,7 +29,7 @@
     color = "#383838"
 
 [shortcuts]
-    #context = ctrl+shift+period
+    context = ctrl+shift+period
     history = ctrl+grave
     close_all = ctrl+shift+grave
 
