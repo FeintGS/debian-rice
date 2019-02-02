@@ -7,11 +7,11 @@
 #                               |_|    
 #-------------------------------------- 
 
-exec_always --no-startup-id feh --bg-fill ~/wallpaper-light.png
+exec_always --no-startup-id feh --bg-fill ~/Wallpapers/wallpaper-light.png
 exec_always --no-startup-id $HOME/.config/polybar/launch
 exec_always --no-startup-id $HOME/.config/conky/launch
 exec_always --no-startup-id $HOME/.config/compton/launch
-exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
+exec_always --no-startup-id $HOME/.config/dunst/launch
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id sudo nm-applet
 exec --no-startup-id unclutter
@@ -44,7 +44,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+space floating toggle
 
 #---required for i3-gaps---#
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 3
 gaps inner 10
 gaps outer 10
 
@@ -180,7 +180,8 @@ bindsym $mod+m exec "st -e ncmpcpp"
 #                                       |___/     
 #-------------------------------------------------
 
-bindsym --release Print  exec --no-startup-id scrot
+bindsym Print exec --no-startup-id scrot
+bindsym $mod+Print exec --no-startup-id scrot -u
 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
