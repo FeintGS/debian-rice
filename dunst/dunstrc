@@ -9,7 +9,6 @@
     horizontal_padding = 8
     startup_notification = false
 
-    #notification_height = 500
     font = "M+ 1c 10"
     allow_markup = yes
     format = "<b>[%a] %s</b>\n%b"
@@ -25,17 +24,11 @@
     idle_threshold = 20
     stack_duplicates = false
 
-    #icon_position = left
-    #icon_folders = /usr/share/icons/Numix/48
-
 [frame]
     width = 1
     color = "#383838"
 
 [shortcuts]
-    #close = ctrl+space
-    #close_all = ctrl+shift+space
-    #history = ctrl+grave
     #context = ctrl+shift+period
     history = ctrl+grave
     close_all = ctrl+shift+grave
