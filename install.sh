@@ -15,3 +15,10 @@ cd build
 ../configure
 make
 sudo make install
+
+# dunst
+git clone https://github.com/dunst-project/dunst
+sudo apt install -y dbus libxinerama libxrandr libxss glib pango/cairo libgtk-3-dev
+cd dunst
+make
+sudo make install
