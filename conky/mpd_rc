@@ -1,0 +1,53 @@
+background yes
+use_xft yes
+xftalpha 0.9
+update_interval 1
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual true
+own_window_argb_value 100
+own_window_colour 0f0f0f
+double_buffer yes
+#minimum_size 328
+minimum_size 600 300
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+default_color 101010
+default_shade_color 101010
+alignment top_right
+gap_x 23
+gap_y 570
+no_buffers yes
+cpu_avg_samples 1
+uppercase no
+border_inner_margin 15
+max_text_width 53
+#text_buffer_size 50
+
+#colors
+color1 ff8c00
+color2 aaa
+color3 eee
+
+#rounded corners
+lua_load /home/feint/.config/conky/conky-draw_bg.lua
+lua_draw_hook_pre draw_bg
+imlib_cache_size 0
+
+TEXT
+${color1}${font M+ 1p:size=12:bold}MPD PLAYER ${color2} ${voffset 2}${hr 2}
+${font M+ 1c:size=9}\
+${color1}Album:${tab 30}${color3}${mpd_album}
+${color1}Date:${tab 30}${color3}${mpd_artist}
+
+${color1}Track:${tab 30}${color3}${mpd_track}
+${color1}Song:${tab 30}${color3}${mpd_title}
+${color1}Artist(s):${tab 30}${color3}${mpd_artist}
+
+${mpd_elapsed} / ${mpd_length}
+${mpd_bar 5,340}
+
