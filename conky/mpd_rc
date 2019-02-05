@@ -32,6 +32,7 @@ text_buffer_size 50
 color1 ff8c00
 color2 aaa
 color3 eee
+color4 bbb
 
 #rounded corners
 lua_load /home/feint/.config/conky/conky-draw_bg.lua
@@ -42,18 +43,29 @@ TEXT
 ${color1}${font M+ 1p:size=12:bold}MPD PLAYER ${color2} ${voffset 2}${hr 2}
 ${font M+ 1c:size=9}\
 ${color1}Song:
-${color3}${scroll 49 1 ${mpd_title}}
+${if_mpd_playing}${color3}${scroll 49 1 ${mpd_title}}\
+${else}${color2}offline\
+${endif}
 ${color1}Album:
-${color3}${scroll 49 1 ${mpd_album}}
+${if_mpd_playing}${color3}${mpd_album}\
+${else}${color2}offline\
+${endif}
 ${color1}Artist(s):
-${color3}${scroll 49 1 ${mpd_artist}}
-#${color1}Date: ${color3}${mpd_date}${tab 70,20}\
-#${color1}Track: ${color3}${mpd_track}
+${if_mpd_playing}${color3}${mpd_artist}\
+${else}${color2}offline\
+${endif}
 
 ${color2}${mpd_elapsed} / ${mpd_length}
 ${color2}${mpd_bar 5,320}
-${color1}Status: ${color3}${mpd_status}   \
-${color1}Repeat: ${color3}${mpd_repeat}   \
-${color1}Random: ${color3}${mpd_random}
-
-${image /tmp/album-cover_conky.png -p 350,30 -s 200x200}
+${color1}Status: \
+${if_mpd_playing}${color3}${mpd_status}   \
+${else}${color2}offline   \
+${endif}\
+${color1}Repeat: \
+${if_mpd_playing}${color3}${mpd_repeat}   \
+${else}${color2}offline   \
+${endif}\
+${color1}Random: \
+${if_mpd_playing}${color3}${mpd_random}
+${else}${color2}offline   \
+${endif}\
