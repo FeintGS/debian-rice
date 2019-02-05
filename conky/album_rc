@@ -28,4 +28,4 @@ border_inner_margin 0
 imlib_cache_size 0
 
 TEXT
-${image /tmp/album-cover_conky.png -p 0,0 -s 200x200}
+${alignc}${exec /home/feint/.config/conky/conky_mpd_art}${image /tmp/conky_cover.png}
