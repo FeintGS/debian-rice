@@ -153,7 +153,7 @@ interface = wlp3s0
 interval = 3
 
 accumulate-stats = true
-label-connected =  %downspeed:0:9%  %upspeed:0:9%
+label-connected =  %downspeed:0:9%  %upspeed:0:9%
 format-connected-underline = #9f78e1
 
 [module/eth]
