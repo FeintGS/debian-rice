@@ -1,0 +1,31 @@
+background yes
+use_xft yes
+xftalpha 1.0
+update_interval 1.0
+own_window yes
+own_window_type override
+own_window_transparent no
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual false
+own_window_argb_value 255
+own_window_colour 000
+double_buffer yes
+minimum_size 200 200
+maximum_size 200 200
+draw_shades yes
+draw_outline yes
+draw_borders yes
+draw_graph_borders yes
+default_color 000000
+default_shade_color 000000
+alignment top_right
+gap_x 35
+gap_y 630
+no_buffers yes
+cpu_avg_samples 1
+uppercase no
+border_inner_margin 0
+imlib_cache_size 0
+
+TEXT
+${image /tmp/album-cover_conky.png -p 0,0 -s 200x200}
