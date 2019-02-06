@@ -53,8 +53,8 @@ ${color1}${font M+ 1p:size=12:bold}\
 PROCESSES ${color2} ${voffset 2}${hr 2}
 # CPU clock speed and total processes
 ${color3}${font M+ 1c:size=10}\
-CPU Clock Speed: ${alignr}${freq_g} GHz
 Total Processes: ${alignr}$processes ($running_processes running)
+CPU Clock Speed: ${alignr}${freq_g} GHz
 # Individual CPU core loads
 ${font Terminus:size=10}\
 ${color3}CPU1: ${cpu cpu1}% ${alignr}${color1}${cpubar cpu1 6,140}
