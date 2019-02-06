@@ -1,18 +1,18 @@
 background yes
 font sans:size=10
-#xftfont sans:size=10
+xftfont sans:size=10
 use_xft yes
 xftalpha 0.9
-update_interval 5
+update_interval 2
 imlib_cache_size 0
 total_run_times 0
 own_window yes
 own_window_type override
-own_window_transparent yes
+own_window_transparent no
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 own_window_argb_visual true
-own_window_argb_value 100
-own_window_colour 0f0f0f
+own_window_argb_value 127
+own_window_colour 10151a
 double_buffer yes
 minimum_size 200
 draw_shades no
@@ -28,16 +28,12 @@ no_buffers yes
 cpu_avg_samples 1
 uppercase no
 border_inner_margin 15
+imlib_cache_size 0
 
 #colors
 color1 ff8c00
 color2 aaa
 color3 eee
-
-#rounded corners
-lua_load /home/feint/.config/conky/conky-draw_bg.lua
-lua_draw_hook_pre draw_bg
-imlib_cache_size 0
 
 TEXT
 ${color1}${font M+ 1p:size=12:bold}\
