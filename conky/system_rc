@@ -55,7 +55,7 @@ ${font Terminus:size=10}\
 ${color3}CPU1: ${cpu cpu1}% ${alignr}${color1}${cpubar cpu1 6,140}
 ${color3}CPU2: ${cpu cpu2}% ${alignr}${color1}${cpubar cpu2 6,140}
 ${color3}CPU3: ${cpu cpu3}% ${alignr}${color1}${cpubar cpu3 6,140}
-${color3}CPU4: ${cpu cpu3}% ${alignr}${color1}${cpubar cpu4 6,140}
+${color3}CPU4: ${cpu cpu4}% ${alignr}${color1}${cpubar cpu4 6,140}
 ${color3}${font M+ 1c:size=10}\
 Memory Usage:${alignr}${mem} / ${memmax}
 CPU load:${alignr}${cpu cpu0}%
