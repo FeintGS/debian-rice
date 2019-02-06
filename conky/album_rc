@@ -10,8 +10,8 @@ own_window_argb_visual false
 own_window_argb_value 255
 own_window_colour 000
 double_buffer yes
-minimum_size 200 200
-maximum_size 200 200
+minimum_size 180 180
+maximum_size 180 180
 draw_shades yes
 draw_outline yes
 draw_borders yes
@@ -19,8 +19,8 @@ draw_graph_borders yes
 default_color 000000
 default_shade_color 000000
 alignment top_right
-gap_x 35
-gap_y 630
+gap_x 28
+gap_y 625
 no_buffers yes
 cpu_avg_samples 1
 uppercase no

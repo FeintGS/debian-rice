@@ -16,12 +16,12 @@ if [[ ! -f /tmp/"${mpd_array[1]}".album ]] ; then
   # if either mpd is offline, or no album art is found
   if ( [ ! -f $cover ] || [ pgrep -x mpd ] ); then
     convert $placeholder -quality 95 -density 400 -sharpen 0x1.2 \
-                    -resize x200 -gravity center -crop 200x200+0+0 +repage \
+                    -resize x180 -gravity center -crop 180x180+0+0 +repage \
                     /tmp/$filename
   else
     # this is the bigger image for conky
     convert $cover -quality 95 -density 400 -sharpen 0x1.2 \
-                    -resize x200 -gravity center -crop 200x200+0+0 \
+                    -resize x180 -gravity center -crop 180x180+0+0 \
                     +repage /tmp/$filename
 
     # our dunst notification w/ an icon

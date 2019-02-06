@@ -10,8 +10,8 @@ own_window_argb_visual true
 own_window_argb_value 127
 own_window_colour 10151a
 double_buffer yes
-minimum_size 560 230
-maximum_size 560 230
+minimum_size 500 200
+maximum_size 500 200
 draw_shades no
 draw_outline no
 draw_borders no
@@ -25,8 +25,8 @@ no_buffers yes
 cpu_avg_samples 1
 uppercase no
 border_inner_margin 15
-max_text_width 50
-text_buffer_size 50
+max_text_width 55
+text_buffer_size 55
 imlib_cache_size 0
 
 #colors
@@ -40,20 +40,20 @@ TEXT
 ${color1}${font M+ 1p:size=12:bold}MPD PLAYER ${color2} ${voffset 2}${hr 2}
 ${font M+ 1c:size=9}\
 ${color1}Song:
-${if_running mpd}${color3}${scroll 49 1 ${mpd_title}}\
+${if_running mpd}${color3}${scroll 53 3 ${mpd_title}}\
 ${else}${color2}offline\
 ${endif}
 ${color1}Album:
-${if_running mpd}${color3}${mpd_album}\
+${if_running mpd}${scroll 53 3 ${color3}${mpd_album}}\
 ${else}${color2}offline\
 ${endif}
 ${color1}Artist(s):
-${if_running mpd}${color3}${mpd_artist}\
+${if_running mpd}${scroll 53 3 ${color3}${mpd_artist}}\
 ${else}${color2}offline\
 ${endif}
 
 ${color2}${mpd_elapsed} / ${mpd_length}
-${color2}${mpd_bar 5,320}
+${color2}${mpd_bar 5,300}
 ${color1}Status: \
 ${if_running mpd}${color3}${mpd_status}  \
 ${else}${color2}off   \
