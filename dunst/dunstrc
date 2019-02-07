@@ -12,7 +12,7 @@
     font = "M+ 1c 10"
     allow_markup = yes
     format = "<b>[%a] %s</b>\n%b"
-    alignment = center
+    alignment = left
     word_wrap = yes
     ignore_newline = no
     geometry = "300x100-5+40"
@@ -23,6 +23,9 @@
     transparency = 15
     idle_threshold = 20
     stack_duplicates = false
+
+    show_icon = bottom
+    icon_position = bottom
 
 [frame]
     width = 1
