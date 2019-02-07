@@ -1,0 +1,16 @@
+quit q
+reload_image r
+zoom_fill f
+
+zoom_in K
+zoom_out J
+
+next_img L space
+prev_img H BackSpace
+
+scroll_up k Up
+scroll_down j Down
+scroll_right l Right
+scroll_left h Left
+
+
