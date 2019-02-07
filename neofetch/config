@@ -10,8 +10,8 @@ export LANG=C
 # See this wiki page for more info:
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
-    info title
-    info underline
+    # info title
+    # info underline
 
     info "OS" distro
     info "Kernel" kernel
@@ -24,14 +24,16 @@ print_info() {
     info "Terminal" term
     info "WM" wm
     info line_break
-    info "Model" model
+    # info "Model" model
     info "CPU" cpu
     info "GPU" gpu
     info "Resolution" resolution
+    info line_break
 
-    # info "CPU Usage" cpu_usage
+    info "CPU Usage" cpu_usage
+    info "RAM" memory
+    info "Battery" battery
     # info "Disk" disk
-    # info "Battery" battery
     # info "Song" song
     # info "Local IP" local_ip
     # info "Public IP" public_ip
@@ -337,7 +339,8 @@ birthday_format="+%a %d %b %Y %l:%M %p"
 # Example:
 # colors=(distro)      - Text is colored based on Distro colors.
 # colors=(4 6 1 8 8 6) - Text is colored in the order above.
-colors=(distro)
+#colors=(distro)
+colors=(0 0 0 11 7 7)
 
 
 # Text Options
