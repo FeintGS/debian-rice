@@ -63,5 +63,10 @@ sudo apt install -y ntfs-3g os-prober grub dosfstools
 ## Networking [NetworkManager]
 sudo apt install -y iw net-tools network-manager network-manager-gnome
 
+## Poweruser tools
+sudo apt install -y zsh powerline
+sudo wget -O /usr/local/bin/grv https://github.com/rgburke/grv/releases/download/v0.1.2/grv_v0.1.2_linux64
+chmod +x /usr/local/bin/grv
+
 ## My personal system specific drivers [Lenovo ThinkPad T450s]
 sudo apt install -y intel-microcode firmware-intel-sound firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree
