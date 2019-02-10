@@ -188,14 +188,8 @@ type = internal/date
 interval = 5
 
 date = "%a, %b %d,"
-date-alt = "%A, %B %d, %Y"
-
 time = %I:%M %p
-time-alt = %I:%M %p
-
-format-prefix-foreground = ${colors.foreground}
 format-underline = #0a6cf5
-
 label = %date% %time%
 
 [module/battery-combined-udev]
