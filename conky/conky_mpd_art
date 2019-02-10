@@ -3,7 +3,7 @@ IFS=$'\t' mpd_array=( $(MPD_HOST=127.0.0.1 MPD_PORT=6600 \
           mpc --format "\t%artist%\t%album%\t%file%\t") );
 
 filename="conky_cover.png";
-placeholder="/home/feint/Pictures/profile/purple.png"
+placeholder="$HOME/Pictures/profile/purple.png"
 
 if [[ ! -f /tmp/"${mpd_array[1]}".album ]] ; then
   rm -f /tmp/*.album &> /dev/null;
@@ -14,7 +14,7 @@ if [[ ! -f /tmp/"${mpd_array[1]}".album ]] ; then
 
 
   # if either mpd is offline, or no album art is found
-  if ( [ ! -f $cover ] || [ pgrep -x mpd ] ); then
+  if ( [ ! -f $cover ] || [ ! pgrep -x mpd ] ); then
     convert $placeholder -quality 95 -density 400 -sharpen 0x1.2 \
                     -resize x180 -gravity center -crop 180x180+0+0 +repage \
                     /tmp/$filename
