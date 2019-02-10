@@ -19,8 +19,8 @@
 [colors]
 background = #9910151a
 background-alt = #444
-foreground = #dfdfdf
-foreground-alt = #555
+foreground = #fff
+foreground-alt = #888
 
 primary = #ffb52a
 secondary = #e60053
@@ -51,8 +51,9 @@ module-margin-right = 2
 font-0 = Terminus:pixelsize=10;1
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;1
 font-2 = FontAwesome:size=9;1
+font-3 = LineIcons:size=10;2
 
-modules-left = i3
+modules-left = i3 mpd
 modules-center =
 modules-right = xbacklight alsa battery-combined-udev memory cpu temperature wlan network date
 
@@ -86,11 +87,32 @@ label-urgent = %index%
 label-urgent-background = ${colors.foreground-alt}
 label-urgent-padding = 2
 
+[module/mpd]
+type = internal/mpd
+
+host = 127.0.0.1
+port = 6600
+interval = 1
+
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-random =  
+icon-repeat = 
+toggle-on-foreground = ${colors.foreground}
+toggle-off-foreground = ${colors.foreground-alt}
+
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next> <icon-repeat> <icon-random>    <label-song> (<label-time>)
+label-song = %artist% - %title%
+label-offline = mpd is offline
+
 [module/xbacklight]
 type = internal/xbacklight
 
 format = <label> <bar>
-label = BL
+label = 
 
 bar-width = 10
 bar-indicator = |
@@ -150,7 +172,9 @@ interface = wlp3s0
 interval = 3
 
 accumulate-stats = true
-label-connected =  %downspeed:0:9%  %upspeed:0:9%
+;label-connected =  %downspeed:0:9%  %upspeed:0:9%
+label-connected-font = 4
+label-connected =  %downspeed:0:9%  %upspeed:0:9%
 format-connected-underline = #9f78e1
 
 [module/eth]
@@ -245,12 +269,18 @@ ramp-foreground = ${colors.foreground}
 [module/alsa]
 type = internal/alsa
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+
+format-volume = <ramp-volume> <bar-volume>
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
 
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+label-muted =  sound muted
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
