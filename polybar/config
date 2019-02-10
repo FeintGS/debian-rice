@@ -94,17 +94,17 @@ host = 127.0.0.1
 port = 6600
 interval = 1
 
-icon-play = 
-icon-pause = 
-icon-stop = 
-icon-prev = 
-icon-next = 
-icon-random =  
-icon-repeat = 
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-random =  
+icon-repeat = 
 toggle-on-foreground = ${colors.foreground}
 toggle-off-foreground = ${colors.foreground-alt}
 
-format-online = <icon-prev> <icon-stop> <toggle> <icon-next> <icon-repeat> <icon-random>    <label-song> (<label-time>)
+format-online = <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <icon-repeat>  <icon-random>    <label-song>    <label-time>
 label-song = %artist% - %title%
 label-offline = mpd is offline
 
