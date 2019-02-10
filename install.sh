@@ -33,15 +33,15 @@ sudo apt install -y feh ffmpeg viewnior
 sudo apt install -y chromium-browser mupdf vim-gtk3
 
 ## Fonts
-sudo apt install xfonts-terminus fonts-mplus
+sudo apt install xfonts-terminus fonts-mplus fonts-font-awesome ttf-unifont
 
 ## Desktop [i3, polybar, conky, dmenu, dunst, ranger]
-sudo apt install -y libnotify-bin libnotify-dev # dunst requirements
-sudo apt install -y imagemagick uuid-runtime	# for album art script
-sudo apt install -y libmpdclient-dev		# for conky music player
-sudo apt install -y libcairo2 libcairo2-dev	# desktop graphics
-sudo apt install -y conky-all		# needed to display images, weird
-sudo apt install -y libiw-dev libxcb-util0-dev	# polybar deps
+sudo apt install -y libnotify-bin libnotify-dev 	# dunst requirements
+sudo apt install -y imagemagick uuid-runtime		# for album art script
+sudo apt install -y libmpdclient-dexbacklight alsa 	# for conky music player
+sudo apt install -y libcairo2 libcairo2-dev		# desktop graphics
+sudo apt install -y conky-all				# needed to display images, weird
+sudo apt install -y libiw-dev libxcb-util0-dev		# polybar deps
 
 sudo apt install -y conky polybar compton i3 suckless-tools dunst ranger
 
