@@ -59,33 +59,6 @@ modules-right = xbacklight alsa battery-combined-udev cpu temperature wlan date
 
 cursor-click = pointer
 
-[bar/mpd_conky]
-monitor = ${env:MONITOR:eDP1}
-width = 10%
-height = 27
-bottom = true
-
-border-size = 0
-border-color = #00000000
-background = #00000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = Terminus:pixelsize=10;1
-font-1 = Unifont:fontformat=truetype:size=8:antialias=false;1
-font-2 = FontAwesome:size=9;1
-font-3 = LineIcons:size=10;2
-
-modules-left =
-modules-center =
-modules-right = mpd
-
-cursor-click = pointer
-
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
