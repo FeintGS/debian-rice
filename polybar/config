@@ -162,7 +162,6 @@ format-packetloss = <label-connected>
 format-packetloss-underline = #9f78e1
 
 label-connected = %essid%  %downspeed:0:9%  %upspeed:0:9%
-label-speed = ""
 
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${self.format-connected-underline}
@@ -188,11 +187,11 @@ label-disconnected-foreground = ${colors.foreground-alt}
 type = internal/date
 interval = 5
 
-date = "%Y-%m-%d"
+date = "%a, %b %d,"
 date-alt = "%A, %B %d, %Y"
 
 time = %I:%M %p
-time-alt = %H:%M
+time-alt = %I:%M %p
 
 format-prefix-foreground = ${colors.foreground}
 format-underline = #0a6cf5
