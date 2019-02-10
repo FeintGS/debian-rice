@@ -1,3 +1,8 @@
+# Dependencies:
+# sudo apt install fonts-mplus xfonts-terminus
+# sudo apt install acpi acpid acpitool cpufreqd fancontrol
+# git clone https://github.com/tryone144/compton
+
 background yes
 font sans:size=10
 xftfont sans:size=10
@@ -23,7 +28,7 @@ default_color 101010
 default_shade_color 101010
 alignment top_right
 gap_x 23
-gap_y 65
+gap_y 50
 no_buffers yes
 cpu_avg_samples 1
 uppercase no
