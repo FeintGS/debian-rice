@@ -104,9 +104,10 @@ icon-repeat = 
 toggle-on-foreground = ${colors.foreground}
 toggle-off-foreground = ${colors.foreground-alt}
 
-format-online = <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <icon-repeat>  <icon-random>    <label-song>    <label-time>
+format-online = <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <icon-repeat>  <icon-random>  <label-time>
 label-song = %artist% - %title%
 label-offline = mpd is offline
+label-offline-foreground = ${colors.foreground-alt}
 
 [module/xbacklight]
 type = internal/xbacklight
