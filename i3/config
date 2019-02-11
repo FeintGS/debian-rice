@@ -12,8 +12,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch
 exec_always --no-startup-id $HOME/.config/conky/launch
 exec_always --no-startup-id $HOME/.config/compton/launch
 exec_always --no-startup-id $HOME/.config/dunst/launch
-exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id sudo nm-applet
 exec --no-startup-id unclutter
 exec --no-startup-id mpd
 exec --no-startup-id acpid
