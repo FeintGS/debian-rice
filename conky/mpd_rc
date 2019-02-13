@@ -8,19 +8,20 @@ own_window_transparent no
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 own_window_argb_visual true
 own_window_argb_value 127
-own_window_colour 10151a
+own_window_colour 000000
 double_buffer yes
 minimum_size 500 200
 maximum_size 500 200
 draw_shades no
 draw_outline no
-draw_borders no
-draw_graph_borders yes
-default_color 101010
+draw_borders yes
+draw_graph_borders no
+default_color 333333
 default_shade_color 101010
+border_width 2
 alignment top_right
 gap_x 23
-gap_y 675
+gap_y 635
 no_buffers yes
 cpu_avg_samples 1
 uppercase no
@@ -28,6 +29,10 @@ border_inner_margin 15
 max_text_width 55
 text_buffer_size 55
 imlib_cache_size 0
+
+#rounded corners
+#lua_load ~/.config/conky/conky-draw_bg.lua
+#lua_draw_hook_pre draw_bg
 
 #colors
 color1 ff8c00

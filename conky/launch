@@ -1,5 +1,8 @@
 #!/bin/bash
-pkill conky
+
+tty=`tty`
+tty_has_compton=[ `ps x | grep compton | grep ${tty:5} ]
+
 conky -dq -c $HOME/.config/conky/system_rc
 conky -dq -c $HOME/.config/conky/album_rc
 conky -dq -c $HOME/.config/conky/mpd_rc

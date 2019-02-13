@@ -3,7 +3,7 @@ IFS=$'\t' mpd_array=( $(MPD_HOST=127.0.0.1 MPD_PORT=6600 \
           mpc --format "\t%artist%\t%album%\t%file%\t") );
 
 filename="conky_cover.png";
-placeholder="$HOME/Pictures/profile/purple.png"
+placeholder="$HOME/.config/conky/purple.png"
 
 if [[ ! -f /tmp/"${mpd_array[1]}".album ]] ; then
   rm -f /tmp/*.album &> /dev/null;

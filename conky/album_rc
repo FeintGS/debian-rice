@@ -6,21 +6,22 @@ own_window yes
 own_window_type override
 own_window_transparent no
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-own_window_argb_visual false
+own_window_argb_visual yes
 own_window_argb_value 255
 own_window_colour 000
 double_buffer yes
 minimum_size 180 180
 maximum_size 180 180
-draw_shades yes
-draw_outline yes
-draw_borders yes
-draw_graph_borders yes
-default_color 000000
+border_width 0
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color 888888
 default_shade_color 000000
 alignment top_right
 gap_x 28
-gap_y 700
+gap_y 660
 no_buffers yes
 cpu_avg_samples 1
 uppercase no
@@ -28,4 +29,4 @@ border_inner_margin 0
 imlib_cache_size 0
 
 TEXT
-${alignc}${exec /home/feint/.config/conky/conky_mpd_art}${image /tmp/conky_cover.png}
+${alignc}${exec /home/feint/.config/conky/conky_mpd_art}${image /tmp/conky_cover.png -p 0,0}
