@@ -2,7 +2,7 @@
 mpd/log
 mpd/pid
 mpd/state
-polybar/battery-combined-dev.pid
+polybar/battery-combined-udev.pid
 mimeapps.list
 pavucontrol.ini
 
