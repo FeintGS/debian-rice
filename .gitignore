@@ -1,0 +1,19 @@
+# garbage files
+mpd/log
+mpd/pid
+mpd/state
+polybar/battery-combined-dev.pid
+mimeapps.list
+pavucontrol.ini
+
+# folders in my .config that I don't want to push
+pulse/
+gtk-2.0/
+systemd/
+wesnoth/
+dconf/
+asciinema/
+chromium/
+firefox/
+deluge/
+gtk-2.0/
