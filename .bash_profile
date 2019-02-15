@@ -1,9 +1,6 @@
 export PATH="$PATH:/usr/local/sbin:/sbin:/usr/sbin"
 export PATH="$PATH:/usr/bin:/usr/local/bin/"
 
-shopt -s autocd
-shopt -s extglob
-
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
 # run singleton of each process, if shell isn't connected via SSH
