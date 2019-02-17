@@ -72,8 +72,6 @@ ${color3}${font M+ 1c:size=10}\
 Memory Usage:${alignr}${mem} / ${memmax}
 CPU load:${alignr}${cpu cpu0}%
 
-
-
 # Top 10 processes by descending CPU utilization
 ${color3}Top Processes:
 ${font Terminus:size=10}Name: $alignr PID\#    CPU%    MEM%  
