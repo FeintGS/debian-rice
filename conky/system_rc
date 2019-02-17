@@ -36,6 +36,10 @@ uppercase no
 border_inner_margin 15
 imlib_cache_size 0
 
+# custom conky graphs/bars/gauges
+lua_load ./conky_draw.lua
+lua_draw_hook_post main
+
 #colors
 color1 ff8c00
 color2 aaa
@@ -67,6 +71,8 @@ ${color3}CPU4: ${cpu cpu4}% ${alignr}${color1}${cpubar cpu4 6,140}
 ${color3}${font M+ 1c:size=10}\
 Memory Usage:${alignr}${mem} / ${memmax}
 CPU load:${alignr}${cpu cpu0}%
+
+
 
 # Top 10 processes by descending CPU utilization
 ${color3}Top Processes:
