@@ -42,8 +42,8 @@ XF86MonBrightness{Down,Up}
 super + {w,Return}
 	{chromium,st}
 
-super + {m,r,shift + w}
-	st -e {ncmpcpp,ranger,sudo nmtui}
+super + {shift + w,r,m}
+  st -e {nmtui,ranger,ncmpcpp}
 
 # program launcher
 super + d
@@ -62,8 +62,9 @@ super + {_,shift + }q
 #            |_|         |_|        
 #
 #-----------------------------------
-super + backslash
-	st -c scratchpad
+#super + backslash
+#  id=$(cat /tmp/scratchid);\
+#  bspc node $id --flag hidden;bspc node -f $id
 
 #------------------------
 #   ____                 
