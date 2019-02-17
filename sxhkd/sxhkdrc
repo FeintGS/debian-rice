@@ -96,7 +96,7 @@ super + {h,j,k,l}
 	bspc node -f {west,south,north,east}
 
 # focus the node in the given direction
-super + {_,shift + }{j,k,i,l}
+super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the last node/desktop
