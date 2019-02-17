@@ -46,35 +46,35 @@ color2 aaa
 color3 eee
 
 TEXT
-${color1}${font M+ 1p:size=12:bold}\
+${color1}${font M+ 1p:size=13:bold}\
 SYSTEM ${color2} ${voffset 2}${hr 2}
 # Generic distro+kernel info
-${color3}${font M+ 1c:size=10}\
+${color3}${font M+ 1c:size=11}\
 Hostname: $alignr$nodename
 Distribution: $alignr${exec cat /etc/issue.net}
 Kernel: $alignr$kernel
 Uptime: $alignr$uptime
 
-${color1}${font M+ 1p:size=12:bold}\
+${color1}${font M+ 1p:size=13:bold}\
 PROCESSES ${color2} ${voffset 2}${hr 2}
 # CPU clock speed and total processes
-${color3}${font M+ 1c:size=10}\
+${color3}${font M+ 1c:size=11}\
 Total Processes: ${alignr}$processes ($running_processes running)
 CPU Clock Speed: ${alignr}${freq_g} GHz
 # Individual CPU core loads
-${font Terminus:size=10}\
+${font Terminus:size=11}\
 ${color3}CPU1: ${cpu cpu1}% ${alignr}${color1}${cpubar cpu1 6,140}
 ${color3}CPU2: ${cpu cpu2}% ${alignr}${color1}${cpubar cpu2 6,140}
 ${color3}CPU3: ${cpu cpu3}% ${alignr}${color1}${cpubar cpu3 6,140}
 ${color3}CPU4: ${cpu cpu4}% ${alignr}${color1}${cpubar cpu4 6,140}
 # Total RAM and CPU utilization
-${color3}${font M+ 1c:size=10}\
+${color3}${font M+ 1c:size=11}\
 Memory Usage:${alignr}${mem} / ${memmax}
 CPU load:${alignr}${cpu cpu0}%
 
 # Top 10 processes by descending CPU utilization
 ${color3}Top Processes:
-${font Terminus:size=10}Name: $alignr PID\#    CPU%    MEM%  
+${font Terminus:size=11}Name: $alignr PID\#    CPU%    MEM%  
 ${top name 1} $alignr ${top pid 1}  ${top cpu 1}  ${top mem 1}  
 ${top name 2} $alignr ${top pid 2}  ${top cpu 2}  ${top mem 2}  
 ${top name 3} $alignr ${top pid 3}  ${top cpu 3}  ${top mem 3}  

@@ -21,7 +21,7 @@ default_shade_color 101010
 border_width 2
 alignment top_right
 gap_x 23
-gap_y 635
+gap_y 660
 no_buffers yes
 cpu_avg_samples 1
 uppercase no
@@ -42,8 +42,8 @@ color4 bbb
 
 
 TEXT
-${color1}${font M+ 1p:size=12:bold}MPD PLAYER ${color2} ${voffset 2}${hr 2}
-${font M+ 1c:size=9}\
+${color1}${font M+ 1p:size=13:bold}MPD PLAYER ${color2} ${voffset 2}${hr 2}
+${font M+ 1c:size=10}\
 ${color1}Song:
 ${if_running mpd}${color3}${scroll 53 3 ${mpd_title}}\
 ${else}${color2}offline\
