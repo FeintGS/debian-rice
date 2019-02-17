@@ -35,7 +35,7 @@ imlib_cache_size 0
 #lua_draw_hook_pre draw_bg
 
 #colors
-color1 ff8c00
+color1 ffb52a
 color2 aaa
 color3 eee
 color4 bbb
