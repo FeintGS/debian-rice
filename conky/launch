@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pkill conky
 conky -dq -c $HOME/.config/conky/system_rc
 conky -dq -c $HOME/.config/conky/album_rc
 conky -dq -c $HOME/.config/conky/mpd_rc
