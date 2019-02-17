@@ -30,16 +30,11 @@ max_text_width 55
 text_buffer_size 55
 imlib_cache_size 0
 
-#rounded corners
-#lua_load ~/.config/conky/conky-draw_bg.lua
-#lua_draw_hook_pre draw_bg
-
 #colors
 color1 ff8c00
 color2 aaa
 color3 eee
 color4 bbb
-
 
 TEXT
 ${color1}${font M+ 1p:size=12:bold}MPD PLAYER ${color2} ${voffset 2}${hr 2}

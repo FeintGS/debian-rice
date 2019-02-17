@@ -36,10 +36,6 @@ uppercase no
 border_inner_margin 15
 imlib_cache_size 0
 
-#rounded corners
-#lua_load ~/.config/conky/conky-draw_bg.lua
-#lua_draw_hook_pre draw_bg
-
 #colors
 color1 ff8c00
 color2 aaa
