@@ -3,17 +3,20 @@ mpd/log
 mpd/pid
 mpd/state
 polybar/battery-combined-udev.pid
-mimeapps.list
-pavucontrol.ini
 
-# folders in my .config that I don't want to push
-pulse/
-gtk-2.0/
-systemd/
-wesnoth/
-dconf/
-asciinema/
-chromium/
-firefox/
-deluge/
-gtk-2.0/
+# Ignore everything except these files/dirs
+*
+!.bashrc
+!.bash_profile
+!bspwm/
+!cava/
+!compton/
+!conky
+!dunst
+!feh
+!i3
+!mpd
+!mpv
+!mupdf
+!neofetch
+!polybar
