@@ -9,5 +9,6 @@ ln -sf $HOME/.config/polybar/config-bspwm $HOME/.config/polybar/config-bspwm
 . $HOME/.config/compton/launch &
 feh --bg-fill ~/Wallpapers/wallpaper-light.png &
 dunst &
+xrdb ~/.Xresources
 
 exec bspwm
