@@ -22,7 +22,7 @@ background-alt = #444
 foreground = #fff
 foreground-alt = #888
 
-primary = #ffb52a
+primary = #ff8300
 secondary = #e60053
 
 alert = #bd2c40
