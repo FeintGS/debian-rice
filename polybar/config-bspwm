@@ -45,8 +45,11 @@ border-color = #00000000
 padding-left = 0
 padding-right = 2
 
-module-margin-left = 1
+module-margin-left = 2
 module-margin-right = 2
+
+border-bottom-size = 2
+border-bottom-color = ${colors.primary}
 
 font-0 = Terminus:pixelsize=10;1
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;1
@@ -55,7 +58,7 @@ font-3 = LineIcons:size=10;2
 
 modules-left = bspwm
 modules-center =
-modules-right = xbacklight alsa battery-combined-udev cpu temperature wlan date
+modules-right = xbacklight alsa battery-combined-udev wlan date
 
 cursor-click = pointer
 
@@ -64,8 +67,8 @@ type = internal/bspwm
 format = <label-state> <label-mode>
 
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline = ${colors.primary}
+label-focused-background = ${colors.primary}
+label-focused-overline = ${colors.primary}
 label-focused-padding = 2
 
 label-unfocused = %index%
