@@ -62,9 +62,6 @@ super + {_,shift + }q
 #            |_|         |_|        
 #
 #-----------------------------------
-#super + backslash
-#  id=$(cat /tmp/scratchid);\
-#  bspc node $id --flag hidden;bspc node -f $id
 
 #------------------------
 #   ____                 
