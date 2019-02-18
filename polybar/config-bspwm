@@ -17,7 +17,7 @@
 ;==========================================================
 
 [colors]
-background = #9910151a
+background = #5010151a
 background-alt = #444
 foreground = #fff
 foreground-alt = #888
@@ -143,7 +143,6 @@ type = internal/cpu
 interval = 2
 format-prefix = "CPU "
 format-prefix-foreground = ${colors.foreground}
-format-underline = #f90000
 label = %percentage:2%%
 
 [module/memory]
@@ -151,7 +150,6 @@ type = internal/memory
 interval = 2
 format-prefix = "RAM "
 format-prefix-foreground = ${colors.foreground}
-format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
@@ -163,16 +161,13 @@ interval = 3
 
 format-connected-prefix = " "
 format-connected = <label-connected>
-format-connected-underline = #9f78e1
 
 format-packetloss-prefix = " "
 format-packetloss = <label-connected>
-format-packetloss-underline = #9f78e1
 
 label-connected = %essid%  %downspeed:0:9%  %upspeed:0:9%
 
 format-disconnected = <label-disconnected>
-format-disconnected-underline = ${self.format-connected-underline}
 label-disconnected = %ifname% disconnected
 label-disconnected-foreground = ${colors.foreground-alt}
 
@@ -181,13 +176,11 @@ type = internal/network
 interface = enp0s25
 interval = 3.0
 
-format-connected-underline = #55aa55
 format-connected-prefix = ""
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
 format-disconnected =
-format-disconnected-underline = ${self.format-connected-underline}
 label-disconnected = %ifname% disconnected
 label-disconnected-foreground = ${colors.foreground-alt}
 
@@ -197,14 +190,12 @@ interval = 5
 
 date = "%a, %b %d,"
 time = %I:%M %p
-format-underline = #0a6cf5
 label = %date% %time%
 
 [module/battery-combined-udev]
 type = custom/script
 exec = ~/.config/polybar/battery-combined-udev.sh
 tail = true
-format-underline = #ffb52a
 
 [module/battery]
 type = internal/battery
@@ -214,14 +205,11 @@ full-at = 98
 
 ;format-charging = <animation-charging> <label-charging>
 format-charging =   <label-charging>
-format-charging-underline = #ffb52a
 
 format-discharging = <animation-discharging> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground}
-format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -246,9 +234,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f90000
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
