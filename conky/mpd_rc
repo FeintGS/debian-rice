@@ -32,8 +32,8 @@ imlib_cache_size 0
 
 #colors
 color1 ff8c00
-color2 aaa
-color3 eee
+color2 fff
+color3 fff
 color4 bbb
 
 TEXT

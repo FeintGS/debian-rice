@@ -42,8 +42,8 @@ lua_draw_hook_post main
 
 #colors
 color1 ff8c00
-color2 aaa
-color3 eee
+color2 fff
+color3 fff
 
 TEXT
 ${color1}${font M+ 1p:size=12:bold}\
