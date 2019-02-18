@@ -7,7 +7,7 @@ own_window_type override
 own_window_transparent no
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 own_window_argb_visual true
-own_window_argb_value 20
+own_window_argb_value 40
 own_window_colour 000000
 double_buffer yes
 minimum_size 500 200
