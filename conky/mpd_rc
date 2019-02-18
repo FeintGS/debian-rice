@@ -31,7 +31,7 @@ text_buffer_size 55
 imlib_cache_size 0
 
 #colors
-color1 ff8c00
+color1 ff8300
 color2 bbb
 color3 fff
 color4 bbb

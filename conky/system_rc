@@ -41,7 +41,7 @@ lua_load ./conky_draw.lua
 lua_draw_hook_post main
 
 #colors
-color1 ff8c00
+color1 ff8300
 color2 fff
 color3 fff
 
