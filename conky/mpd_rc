@@ -1,6 +1,6 @@
 background yes
 use_xft yes
-xftalpha 0.9
+xftalpha 1.0
 update_interval 1
 own_window yes
 own_window_type override

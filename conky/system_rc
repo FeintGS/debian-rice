@@ -7,7 +7,7 @@ background yes
 font sans:size=10
 xftfont sans:size=10
 use_xft yes
-xftalpha 0.9
+xftalpha 1.0
 update_interval 2
 imlib_cache_size 0
 total_run_times 0
