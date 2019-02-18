@@ -6,8 +6,8 @@ alias A='cd $HOME/Anime/'
 alias V='cd $HOME/Videos/'
 
 alias cfi='vim $HOME/.config/i3/config'
-alias cfp='vim $HOME/.config/polybar/config'
+alias cfp='vim $HOME/.config/polybar/config-bspwm'
 alias cfc='vim $HOME/.config/compton/compton.conf'
-alias cfb='vim $HOME/.config/bspwm/bspwmrc'
+alias cfb='vim $HOME/.config/bspwm/bspwmrc-bspwm'
 alias cfs='vim $HOME/.config/sxhkd/sxhkdrc'
 
