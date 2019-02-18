@@ -85,18 +85,6 @@ label-urgent = %index%
 label-urgent-background = ${colors.foreground-alt}
 label-urgent-padding = 2
 
-;label-monocle = a
-;label-tiled = b
-;label-fullscreen = c
-;label-floating = d
-;label-pseudotiled = e
-;label-locked = f
-;label-locked-foreground = #bd2c40
-;label-sticky = g
-;label-sticky-foreground = #fba922
-;label-private = h
-;label-private-foreground = #bd2c40
-
 [module/mpd]
 type = internal/mpd
 
