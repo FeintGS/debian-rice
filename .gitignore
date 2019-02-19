@@ -7,7 +7,7 @@ polybar/battery-combined-udev.pid
 ranger/bookmarks
 # Ignore everything except these files/dirs
 *
-.gitignore
+!.gitignore
 !.bashrc
 !.bash_profile
 !bspwm/
