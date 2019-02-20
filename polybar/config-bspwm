@@ -52,14 +52,14 @@ border-bottom-size = 2
 border-bottom-color = ${colors.primary}
 
 font-0 = Terminus:pixelsize=10:antialias=true;2
-font-1 = Unifont:fontformat=truetype:size=8:antialias=true;2
+font-1 = Unifont:fontformat=truetype:size=8:antialias=false;1
 font-2 = FontAwesome:size=9;2
 font-3 = LineIcons:size=10;2
 font-4 = M+ 1c:size=9:antialias=true:weight=regular;2
 
 modules-left = bspwm
 modules-center =
-modules-right = xbacklight alsa battery-combined-udev wlan date
+modules-right = xbacklight alsa battery-combined-udev temperature wlan date
 
 cursor-click = pointer
 
@@ -121,12 +121,12 @@ label = 
 bar-width = 10
 bar-indicator = |
 bar-indicator-foreground = #fff
-bar-indicator-font = 1
+bar-indicator-font = 2
 bar-fill = ─
-bar-fill-font = 1
+bar-fill-font = 2
 bar-fill-foreground = #9f78e1
 bar-empty = ─
-bar-empty-font = 1
+bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
 
 [module/backlight-acpi]
@@ -272,11 +272,11 @@ bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator = |
-bar-volume-indicator-font = 1
+bar-volume-indicator-font = 2
 bar-volume-fill = ─
-bar-volume-fill-font = 1
+bar-volume-fill-font = 2
 bar-volume-empty = ─
-bar-volume-empty-font = 1
+bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [settings]
