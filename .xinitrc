@@ -8,6 +8,5 @@ ln -sf $HOME/.config/polybar/config-bspwm $HOME/.config/polybar/config-bspwm
 . $HOME/.config/conky/launch &
 . $HOME/.config/compton/launch &
 dunst &
-xrdb ~/.Xresources
 
 exec bspwm

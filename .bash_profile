@@ -2,6 +2,7 @@ export PATH="$PATH:/usr/local/sbin:/sbin:/usr/sbin"
 export PATH="$PATH:/usr/bin:/usr/local/bin/"
 
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
+[ -f ~/.Xresources ] && xrdb ~/.Xresources
 
 # run singleton of each process, if shell isn't connected via SSH
 if [ ! -n "$SSH_CLIENT" ] && [ ! -n "$SSH_TTY" ] && [ ! -n "$SSH_CONNECTION" ]; then
