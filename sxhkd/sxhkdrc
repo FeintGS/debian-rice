@@ -16,7 +16,7 @@ XF86Audio{Lower,Raise}Volume
 	pactl set-sink-volume 0 {-5,+5}%
 
 Print
-	scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/scrot'
+	scrot -z --quality 100 "`uuidgen`.png" -e 'mv $f ~/Pictures/scrot/'
 
 super + x
 	$HOME/.config/i3/lockscreen
