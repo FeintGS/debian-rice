@@ -1,4 +1,10 @@
 #!/bin/bash
+
+# if mpd process isn't running, then just exit
+if [ -z `pgrep -x mpd` ]; then
+  return 1 
+fi
+
 IFS=$'\t' mpd_array=( $(MPD_HOST=127.0.0.1 MPD_PORT=6600 \
           mpc --format "\t%artist%\t%album%\t%file%\t") );
 
@@ -13,8 +19,8 @@ if [[ ! -f /tmp/"${mpd_array[1]}".album ]] ; then
   cover=$album"/"`ls $album | egrep "jpeg|jpg|png|gif" | head -n 1`;
 
 
-  # if either mpd is offline, or no album art is found
-  if ( [ ! -f $cover ] || [ ! pgrep -x mpd ] ); then
+  # if no album art is found
+  if ( [ ! -f $cover ] || [ ! -z  `pgrep -x mpd` ] ); then
     convert $placeholder -quality 95 -density 400 -sharpen 0x1.2 \
                     -resize x180 -gravity center -crop 180x180+0+0 +repage \
                     /tmp/$filename
