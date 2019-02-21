@@ -2,9 +2,13 @@
 
 ## Introduction
 
-## The Motivation
+## Motivation
 
-## How to Use?
+## Installation
+
+## How to use?
+
+## How to modify?
 
 ## Contributing
 (link to CONTRIBUTING.md)
