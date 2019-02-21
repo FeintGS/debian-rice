@@ -11,6 +11,9 @@
 ## Introduction
 
 ## Features // Demo in Action
+* Low resource usage, low hardware requirements
+* Extended battery life
+* Ergonomic workflow
 
 ## Installation
 
