@@ -1,5 +1,7 @@
 ![Project logo](rice_logo.png)
 
+[![Debian version](https://img.shields.io/badge/Debian%20Stable-v9.8-brightgreen.svg)](https://www.debian.org/releases/stable/)
+
 ## Introduction
 
 ## Installation
