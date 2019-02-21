@@ -4,11 +4,11 @@
 
 ## Introduction
 
-## Setup
+## Features
 
-## How to use?
+## Installation
 
-## How to modify?
+## Usage
 
 ## Contributing
 (link to CONTRIBUTING.md)
