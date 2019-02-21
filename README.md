@@ -1,4 +1,4 @@
-![Project logo](rice_logo_transparent.png)
+![Project logo](rice_logo.png)
 
 
 # Table of Contents
