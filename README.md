@@ -1,10 +1,10 @@
 ![Project logo](rice_logo.png)
 
-# Why?
+# Introduction
 
-# Background and motivation
+# The Motivation
 
-# How to use?
+# How to Use?
 
 # Contributing
 (link to CONTRIBUTING.md)
