@@ -17,6 +17,8 @@
 * Modular, extensible, customizable
 * Greatly improves battery life, especially compared to Windows 10
 
+![](splash.png)
+
 ## Installation
 
 ### Dependencies
