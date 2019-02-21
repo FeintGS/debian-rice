@@ -1,18 +1,8 @@
 ![Project logo](rice_logo.png)
 
+# So what's this all about?
 
-# Table of Contents
-* [What is this?](#what-is-this)
-* [Motivation](#motivation)
-* [How to use?](#how-to-use)
-* [Usage](#usage)
-* [Update](#update)
-* [Contributing](#contributing)
-* [License](#license)
-
-# What is this?
-
-# Motivation
+# Background and motivation
 
 # How to use?
 
