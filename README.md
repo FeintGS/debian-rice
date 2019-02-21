@@ -17,7 +17,7 @@
 * Modular, extensible, customizable
 * Greatly improves battery life, especially compared to Windows 10
 
-![](splash.png)
+[![Splash image](splash.png)](https://raw.githubusercontent.com/FeintGS/debian-rice/master/splash.png)
 
 ## Installation
 
