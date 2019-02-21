@@ -1,13 +1,13 @@
 ![Project logo](rice_logo.png)
 
-# Introduction
+## Introduction
 
-# The Motivation
+## The Motivation
 
-# How to Use?
+## How to Use?
 
-# Contributing
+## Contributing
 (link to CONTRIBUTING.md)
 
-# License
+## License
 MIT © FeintGS (link to LICENSE.md)
