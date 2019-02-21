@@ -1,6 +1,6 @@
 ![Project logo](rice_logo.png)
 
-# So what's this all about?
+# Why?
 
 # Background and motivation
 
