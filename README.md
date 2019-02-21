@@ -2,8 +2,6 @@
 
 ## Introduction
 
-## Motivation
-
 ## Installation
 
 ## How to use?
