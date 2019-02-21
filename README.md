@@ -4,7 +4,7 @@
 
 ## Introduction
 
-## Installation
+## Setup
 
 ## How to use?
 
