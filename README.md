@@ -11,9 +11,9 @@
 ## Introduction
 
 ## Features // Demo in Action
+* All the features of a full desktop experience, minus the bloat
 * Low resource usage, low hardware requirements
 * Extended battery life
-* Ergonomic workflow
 
 ## Installation
 
