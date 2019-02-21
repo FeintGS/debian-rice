@@ -15,7 +15,7 @@ XF86AudioMute
 XF86Audio{Lower,Raise}Volume
 	pactl set-sink-volume 0 {-5,+5}%
 
-Print
+@Print
 	scrot -z --quality 100 "`uuidgen`.png" -e 'mv $f ~/Pictures/scrot/'
 
 super + x
