@@ -1,8 +1,8 @@
 ![Project logo](rice_logo.png)
 
 [![Debian version](https://img.shields.io/badge/Debian%20Stable-v9.8-brightgreen.svg)](https://www.debian.org/releases/stable/)
-![](https://img.shields.io/github/followers/FeintGS.svg?style=social)
-![](https://img.shields.io/twitter/follow/FeintGS.svg?style=social)
+![](https://img.shields.io/github/followers/feintgs.svg?style=social)
+![](https://img.shields.io/twitter/follow/feintgs.svg?style=social)
 
 ## Introduction
 
