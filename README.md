@@ -1,6 +1,6 @@
 ![Project logo](rice_logo.png)
 
-![](https://img.shields.io/badge/latest%20ver-v1.0.0--beta-brightgreen.svg)
+![](https://img.shields.io/badge/latest%20ver-v1.0.0--alpha-brightgreen.svg)
 [![Debian version](https://img.shields.io/badge/Debian%20Stable-v9.8-brightgreen.svg)](https://www.debian.org/releases/stable/)
 ![](https://img.shields.io/github/commit-activity/w/FeintGS/debian-rice.svg)
 ![](https://img.shields.io/github/issues-raw/FeintGS/debian-rice.svg)
