@@ -2,21 +2,19 @@
 
 
 # Table of Contents
-* [Introduction](#introduction)
-* [Build](#build)
+* [What is this?](#what-is-this)
+* [Motivation](#motivation)
+* [How to use?](#how-to-use)
 * [Usage](#usage)
 * [Update](#update)
 * [Contributing](#contributing)
 * [License](#license)
 
-# Introduction
+# What is this?
 
-# Build
+# Motivation
 
-# Usage
-
-## Updating your dotfiles to newer versions
-## Keybindings
+# How to use?
 
 # Contributing
 (link to CONTRIBUTING.md)
