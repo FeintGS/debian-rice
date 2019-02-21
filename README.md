@@ -13,7 +13,9 @@
 ## Features // Demo in Action
 * All the features of a full desktop experience, minus the bloat
 * Low resource usage, low hardware requirements
-* Extended battery life
+* Extremely efficient blur algorithm, with low resource utilization
+* Modular, extensible, customizable
+* Greatly improves battery life, especially compared to Windows 10
 
 ## Installation
 
