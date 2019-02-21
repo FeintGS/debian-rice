@@ -20,7 +20,7 @@ if [[ ! -f /tmp/"${mpd_array[1]}".album ]] ; then
 
 
   # if no album art is found
-  if ( [ ! -f $cover ] || [ ! -z  `pgrep -x mpd` ] ); then
+  if ( [ ! -f $cover ] ); then
     convert $placeholder -quality 95 -density 400 -sharpen 0x1.2 \
                     -resize x180 -gravity center -crop 180x180+0+0 +repage \
                     /tmp/$filename
