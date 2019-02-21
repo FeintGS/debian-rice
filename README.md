@@ -1,5 +1,6 @@
 ![Project logo](rice_logo_transparent.png)
 
+
 # Table of Contents
 * [Introduction](#introduction)
 * [Build](#build)
