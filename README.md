@@ -6,11 +6,17 @@
 
 ## Introduction
 
-## Features
+## Features // Demo in Action
 
 ## Installation
 
+### Dependencies
+
+### Cloning
+
 ## Usage
+
+### Basic keyboard commands
 
 ## Contributing
 (link to CONTRIBUTING.md)
