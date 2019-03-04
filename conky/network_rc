@@ -28,7 +28,7 @@ default_shade_color 101010
 border_width 2
 alignment top_right
 gap_x 23
-gap_y 493
+gap_y 483
 no_buffers yes
 cpu_avg_samples 1
 uppercase no
