@@ -1,5 +1,5 @@
 # Dependencies:
-# sudo apt install fonts-mplus xfonts-terminus
+# sudo apt install xfonts-terminus
 # git clone https://github.com/tryone144/compton
 
 background yes
@@ -41,10 +41,10 @@ color2 fff
 color3 fff
 
 TEXT
-${color1}${font M+ 1p:size=12:bold}\
+${color1}${font Ubuntu:size=12:bold}\
 NETWORK USAGE ${color2} ${voffset 2}${hr 2}
 ${if_up wlp3s0}\
-${color3}${font M+ 1c:size=9}Down: ${downspeed wlp3s0}/s ${alignr}Up: ${upspeed wlp3s0}/s
+${color3}${font Ubuntu:size=10}Down: ${downspeed wlp3s0}/s ${alignr}Up: ${upspeed wlp3s0}/s
 ${color1}${color1}${downspeedgraph wlp3s0 60,130 ff44ff eeeeee} ${alignr}${color1}${upspeedgraph wlp3s0 60,130 444444 eeeeee}
 ${color3}  Total: ${totaldown wlp3s0} ${alignr}Total: ${totalup wlp3s0}\
 ${endif}
