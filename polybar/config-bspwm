@@ -55,7 +55,7 @@ font-0 = Terminus:pixelsize=10:antialias=true;2
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;1
 font-2 = FontAwesome:size=9;2
 font-3 = LineIcons:size=10;2
-font-4 = M+ 1c:size=9:antialias=true:weight=regular;2
+font-4 = Ubuntu:size=9:antialias=true:weight=regular;2
 
 modules-left = bspwm
 modules-center =
