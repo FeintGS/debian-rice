@@ -9,7 +9,7 @@
     horizontal_padding = 8
     startup_notification = false
 
-    font = "M+ 1c 10"
+    font = "Ubuntu 10"
     allow_markup = yes
     format = "<b>[%a] %s</b>\n%b"
     alignment = left
