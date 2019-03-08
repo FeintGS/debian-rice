@@ -131,6 +131,10 @@ super + r
 super + shift + w
     sudo nmtui
 
+# Music player
+super + m
+    st -e ncmpcpp
+
 # }}}
 # Fn Controls {{{
 
