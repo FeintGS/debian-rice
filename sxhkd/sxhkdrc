@@ -119,6 +119,14 @@ super + shift + Return
 super + w
     chromium
 
+# File browser
+super + r
+    st -e ranger $HOME
+
+# File browser with root privileges
+super + r
+    st -e sudo ranger $HOME
+
 # WiFi AP selection menu
 super + shift + w
     sudo nmtui
