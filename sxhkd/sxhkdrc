@@ -26,11 +26,13 @@ super + shift + j
 super + {_,Shift + }{1-9,0}
     bspc {desktop -f,node -d} focused:^{1-9,10}
 
-# Toggle fullscreen/floating state
+# Toggle fullscreen/floating/sticky state
 super + shift + f
     bspc node -t \~fullscreen
 super + space
     bspc node -t \~floating || bspc node -t \~tiled
+super + shift + space
+    bspc node -g sticky && notify-send "Toggled sticky state"
 
 # Close/kill current window
 super + {_,shift + }q
