@@ -84,18 +84,6 @@ super + ctrl + space
 super + ctrl + shift + space
     bspc query -N | xargs -I id -n 1 bspc node id -p cancel
 
-# Toggle locked state of current window
-super + ctrl + comma
-    bspc node -g locked && notify-send "Toggled locked state"
-
-# Toggle sticky state of current window
-super + ctrl + period
-    bspc node -g sticky && notify-send "Toggled sticky state"
-
-# Toggle private state of current window
-super + ctrl + slash
-    bspc node -g private && notify-send "Toggled private state"
-
 # }}}
 # Application launcher{{{
 
