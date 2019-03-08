@@ -50,6 +50,12 @@ super + @button{1-3}
 # }}}
 # Application launcher{{{
 
+# Launch app with root privileges
+super + shift + d
+    sudo $(rofi -dmenu)
 
+# Launch app without root privileges
+super + d
+    $(rofi -dmenu)
 
 # }}}
