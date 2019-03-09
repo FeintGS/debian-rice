@@ -23,8 +23,10 @@ super + shift + j
   if ! bspc node -s south.local; then bspc node -m south && bspc node $(bspc query -N -n last) -f; fi
 
 # Focus desktop / transfer node to desktop
-super + {_,Shift + }{1-9,0}
-    bspc {desktop -f,node -d} focused:^{1-9,10}
+super + {1-9,0}
+    bspc desktop -f focused:^{1-9,10}
+super + shift + {1-9,0}
+    bspc node -d focused:^{1-9,10}
 
 # Toggle fullscreen/floating/sticky state
 super + shift + f
@@ -110,11 +112,11 @@ super + w
     chromium
 
 # File browser
-super + r
+super + a
     st -e ranger $HOME
 
 # File browser with root privileges
-super + r
+super + shift + a
     st -e sudo ranger $HOME
 
 # WiFi AP selection menu
