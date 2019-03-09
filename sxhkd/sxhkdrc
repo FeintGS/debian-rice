@@ -29,8 +29,6 @@ super + shift + {1-9,0}
     bspc node -d focused:^{1-9,10}
 
 # Focus the previous / next desktop
-super + {g,h}
-    bspc desktop -f {prev,next}
 ctrl + button{1,3}
     bspc desktop -f {prev,next}
 
