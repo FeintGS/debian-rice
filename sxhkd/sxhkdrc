@@ -31,6 +31,8 @@ super + shift + {1-9,0}
 # Focus the previous / next desktop
 super + {g,h}
     bspc desktop -f {prev,next}
+ctrl + {g,h}
+    bspc desktop -f {prev,next}
 
 # Toggle fullscreen/floating/sticky state
 super + shift + f
