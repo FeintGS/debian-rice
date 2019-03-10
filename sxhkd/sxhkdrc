@@ -99,11 +99,7 @@ super + ctrl + shift + space
 
 # Launch app
 super + d
-    $(rofi -dmenu)
-
-# Launch app with root privileges
-super + shift + d
-    sudo $(rofi -dmenu)
+    rofi -modi drun -show
 
 # Launch terminal
 super + Return
