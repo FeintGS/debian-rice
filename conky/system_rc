@@ -8,7 +8,7 @@ font sans:size=10
 xftfont sans:size=10
 use_xft yes
 xftalpha 1.0
-update_interval 2
+update_interval 1
 imlib_cache_size 0
 total_run_times 0
 own_window yes
@@ -53,7 +53,7 @@ ${color3}${font Ubuntu:size=10}\
 Hostname: $alignr$nodename
 Distribution: $alignr${exec cat /etc/issue.net}
 Kernel: $alignr$kernel
-Uptime: $alignr$uptime
+Uptime: $alignr$uptime_short
 
 ${color1}${font Ubuntu:size=12:bold}\
 PROCESSES ${color2} ${voffset 2}${hr 2}
