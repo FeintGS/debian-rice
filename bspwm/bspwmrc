@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 sxhkd &
 feh --bg-fill ~/.config/wallpaper-current* &
