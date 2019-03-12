@@ -113,11 +113,11 @@ super + w
 
 # File browser
 super + a
-    st -e ranger $HOME
+    st -e fff $HOME
 
 # File browser with root privileges
 super + shift + a
-    st -e sudo ranger $HOME
+    st -e sudo fff $HOME
 
 # WiFi AP selection menu
 super + shift + w
