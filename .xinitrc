@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 
+# Refresh rate to match display
 xset r rate 200 50
 xsetroot -cursor_name left_ptr
 
-ln -sf $HOME/.config/polybar/config-bspwm $HOME/.config/polybar/config-bspwm
-. $HOME/.config/polybar/launch &
+# Make the CapsLock key more useful
+. $HOME/.xkb_remap
+
+# Desktop environment
+[ -f ~/.Xresources ] && xrdb ~/.Xresources
 . $HOME/.config/conky/launch &
 . $HOME/.config/compton/launch &
+. $HOME/.config/polybar/launch &
 dunst &
-
 exec bspwm
