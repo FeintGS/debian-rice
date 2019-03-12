@@ -16,4 +16,8 @@ bspc config focused_border_color  '#efefef'
 bspc config active_border_color   '#303030'
 bspc config normal_border_color   '#303030'
 
+bspc config pointer_modifier shift
+bspc config pointer_action1 move
+bspc config pointer_action3 resize_corner
+
 bspc rule -a Gimp desktop='^8' state=floating follow=on
