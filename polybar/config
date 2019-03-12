@@ -67,25 +67,25 @@ cursor-click = pointer
 type = internal/bspwm
 format = <label-state> <label-mode>
 
-label-focused = %index%:%name%
+label-focused = %index%
 label-focused-background = ${colors.primary}
 label-focused-overline = ${colors.primary}
 label-focused-padding = 2
 label-focused-font = 5
 
-label-unfocused = %index%:%name%
+label-unfocused = %index%
 label-unfocused-padding = 2
 label-unfocused-font = 5
 
 label-empty = 
 label-empty-padding = 2
 
-label-occupied = %index%:%name%
+label-occupied = %index%
 label-occupied-background = ${colors.background}
 label-occupied-padding = 2
 label-occupied-font = 5
 
-label-urgent = %index%:%name%
+label-urgent = %index%
 label-urgent-background = ${colors.foreground-alt}
 label-urgent-padding = 2
 label-urgent-font = 5
