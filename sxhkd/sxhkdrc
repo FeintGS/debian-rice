@@ -121,7 +121,7 @@ super + shift + a
 
 # WiFi AP selection menu
 super + shift + w
-    sudo nmtui
+    sudo wicd-gtk
 
 # Music player
 super + m
