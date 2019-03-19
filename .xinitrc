@@ -9,7 +9,6 @@ xsetroot -cursor_name left_ptr
 
 # Desktop environment
 [ -f ~/.Xresources ] && xrdb ~/.Xresources
-. $HOME/.config/conky/launch &
 . $HOME/.config/compton/launch &
 . $HOME/.config/polybar/launch &
 dunst &
