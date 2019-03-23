@@ -28,7 +28,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/top]
-monitor = ${env:MONITOR:eDP1}
+monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 25
 fixed-center = false
@@ -51,11 +51,14 @@ module-margin-right = 3
 border-bottom-size = 2
 border-bottom-color = ${colors.primary}
 
-font-0 = Terminus:pixelsize=10:antialias=true;2
+; main font
+font-0 = Noto Sans:size=8:antialias=true:autohint=false:weight=Regular;2
+; bar indicator font
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;1
-font-2 = FontAwesome:size=9;2
-font-3 = LineIcons:size=10;2
-font-4 = Ubuntu:size=9:antialias=true:weight=regular;2
+; iconic font #1
+font-2 = FontAwesome:size=10:antialias=true:autohint=false;2
+; iconic font #2
+font-3 = LineIcons:size=11:antialias=true:autohint=false;2
 
 modules-left = bspwm
 modules-center =
@@ -67,28 +70,26 @@ cursor-click = pointer
 type = internal/bspwm
 format = <label-state> <label-mode>
 
+padding = 4
+
 label-focused = %index%
 label-focused-background = ${colors.primary}
 label-focused-overline = ${colors.primary}
-label-focused-padding = 2
-label-focused-font = 5
+label-focused-padding = ${self.padding}
 
 label-unfocused = %index%
-label-unfocused-padding = 2
-label-unfocused-font = 5
+label-unfocused-padding = ${self.padding}
 
 label-empty = 
-label-empty-padding = 2
+label-empty-padding = ${self.padding}
 
 label-occupied = %index%
 label-occupied-background = ${colors.background}
-label-occupied-padding = 2
-label-occupied-font = 5
+label-occupied-padding = ${self.padding}
 
 label-urgent = %index%
 label-urgent-background = ${colors.foreground-alt}
-label-urgent-padding = 2
-label-urgent-font = 5
+label-urgent-padding = ${self.padding}
 
 [module/mpd]
 type = internal/mpd
@@ -190,7 +191,6 @@ label-margin = 0
 date = "%a, %b %d,"
 time = %I:%M %p
 label = %date% %time%
-label-font = 5
 label-background = ${colors.primary}
 
 [module/battery-combined-udev]
