@@ -17,79 +17,77 @@
 ;==========================================================
 
 [colors]
-background = #5010151a
-background-alt = #444
-foreground = #fff
-foreground-alt = #888
+white = #fffaff
+pink = #ff00ff
 
-primary = #ff8300
-secondary = #e60053
+background = #fffaff
+background-selected = ${self.foreground}
+background-disabled = ${self.background}
+background-urgent = #ff00ff	;placeholder
 
-alert = #bd2c40
+foreground = #ff69b4
+foreground-selected = ${self.background}
+foreground-disabled = #ccc
+foreground-urgent = #ff00ff	;placeholder
 
 [bar/top]
-monitor = ${env:MONITOR:eDP-1}
+monitor = eDP1
 width = 100%
 height = 25
 fixed-center = false
+cursor-click = pointer
 
 background = ${colors.background}
 foreground = ${colors.foreground}
+tray-position = right
+tray-scale = 1.0
 
-line-size = 3
-line-color = #f00
-
-border-size = 0
-border-color = #00000000
-
-padding-left = 0
-padding-right = 0
-
+; css-like properties
 module-margin-left = 0
 module-margin-right = 3
+border-size = 0
+border-bottom-size = 3
+border-bottom-color = ${colors.background-selected}
 
-border-bottom-size = 2
-border-bottom-color = ${colors.primary}
-
-; main font
-font-0 = Noto Sans:size=8:antialias=true:autohint=false:weight=Regular;2
-; bar indicator font
-font-1 = Unifont:fontformat=truetype:size=8:antialias=false;1
-; iconic font #1
-font-2 = FontAwesome:size=10:antialias=true:autohint=false;2
-; iconic font #2
-font-3 = LineIcons:size=11:antialias=true:autohint=false;2
-
+; module placements
 modules-left = bspwm
 modules-center =
 modules-right = xbacklight alsa battery-combined-udev temperature wlan date
 
-cursor-click = pointer
+; main font, bar indicator font, icons #1, icons #2
+font-0 = Noto Sans:size=9:antialias=true:autohint=false:weight=Bold;2
+font-1 = Unifont:fontformat=truetype:size=8:antialias=false;1
+font-2 = FontAwesome:size=10:antialias=true:autohint=false;2
+font-3 = LineIcons:size=11:antialias=true:autohint=false;2
 
 [module/bspwm]
 type = internal/bspwm
 format = <label-state> <label-mode>
 
+label-empty-padding = 0
 padding = 4
+label-focused-padding = ${self.padding}
+label-unfocused-padding = ${self.padding}
+label-occupied-padding = ${self.padding}
+label-urgent-padding = ${self.padding}
 
 label-focused = %index%
-label-focused-background = ${colors.primary}
-label-focused-overline = ${colors.primary}
-label-focused-padding = ${self.padding}
+label-focused-background = ${colors.background-selected}
+label-focused-foreground = ${colors.foreground-selected}
 
 label-unfocused = %index%
-label-unfocused-padding = ${self.padding}
+label-unfocused-background = ${colors.background}
+label-unfocused-foreground = ${colors.foreground}
 
 label-empty = 
-label-empty-padding = ${self.padding}
 
 label-occupied = %index%
 label-occupied-background = ${colors.background}
-label-occupied-padding = ${self.padding}
+label-occupied-foreground = ${colors.foreground}
 
 label-urgent = %index%
-label-urgent-background = ${colors.foreground-alt}
-label-urgent-padding = ${self.padding}
+label-urgent-background = ${colors.background-urgent}
+label-urgent-foreground = ${colors.foreground-urgent}
 
 [module/mpd]
 type = internal/mpd
@@ -106,12 +104,12 @@ icon-prev = 
 icon-next = 
 icon-random =  
 toggle-on-foreground = ${colors.foreground}
-toggle-off-foreground = ${colors.foreground-alt}
+toggle-off-foreground = ${colors.foreground-disabled}
 
 format-online = <icon-prev>  <icon-stop>  <toggle>  <icon-next> <icon-random> <icon-repeat>  <label-time>
 label-song = %artist% - %title%
 label-offline = mpd is offline
-label-offline-foreground = ${colors.foreground-alt}
+label-offline-foreground = ${colors.foreground-disabled}
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -121,14 +119,14 @@ label = 
 
 bar-width = 10
 bar-indicator = |
-bar-indicator-foreground = #fff
+bar-indicator-foreground = ${colors.foreground}
 bar-indicator-font = 2
 bar-fill = ─
 bar-fill-font = 2
-bar-fill-foreground = #9f78e1
+bar-fill-foreground = ${colors.foreground}
 bar-empty = ─
 bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+bar-empty-foreground = ${colors.foreground-disabled}
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -166,7 +164,7 @@ label-connected = %essid%  %downspeed:0:9%  %upspeed:0:9%
 
 format-disconnected = <label-disconnected>
 label-disconnected = %ifname% disconnected
-label-disconnected-foreground = ${colors.foreground-alt}
+label-disconnected-foreground = ${colors.foreground-disabled}
 
 [module/eth]
 type = internal/network
@@ -174,12 +172,12 @@ interface = enp0s25
 interval = 3.0
 
 format-connected-prefix = ""
-format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-foreground = ${colors.foreground}
 label-connected = %local_ip%
 
 format-disconnected =
 label-disconnected = %ifname% disconnected
-label-disconnected-foreground = ${colors.foreground-alt}
+label-disconnected-foreground = ${colors.foreground-disabled}
 
 [module/date]
 type = internal/date
@@ -191,7 +189,8 @@ label-margin = 0
 date = "%a, %b %d,"
 time = %I:%M %p
 label = %date% %time%
-label-background = ${colors.primary}
+label-background = ${colors.background-selected}
+label-foreground = ${colors.foreground-selected}
 
 [module/battery-combined-udev]
 type = custom/script
@@ -239,7 +238,7 @@ format-warn = <ramp> <label-warn>
 
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
+label-warn-foreground = ${colors.foreground-urgent}
 
 ramp-0 = 
 ramp-1 = 
@@ -259,17 +258,11 @@ ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
 
-format-muted-foreground = ${colors.foreground-alt}
+format-muted-foreground = ${colors.foreground-disabled}
 label-muted =  sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground = ${colors.foreground}
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
@@ -277,18 +270,6 @@ bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
-
-[settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
-
-[global/wm]
-margin-top = 0
-margin-bottom = 0
+bar-volume-empty-foreground = ${colors.foreground-disabled}
 
 ; vim:ft=dosini
