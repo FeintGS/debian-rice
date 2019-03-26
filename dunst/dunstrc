@@ -1,52 +1,46 @@
 [global]
-    indicate_hidden = yes
-    bounce_freq = 0
-    show_age_threshold = 60
-    monitor = 0
-    follow = mouse
-    sticky_history = no
-    padding = 8
-    horizontal_padding = 8
-    startup_notification = false
-
-    font = "Ubuntu 10"
-    allow_markup = yes
-    format = "<b>[%a] %s</b>\n%b"
-    alignment = left
-    word_wrap = yes
-    ignore_newline = no
+    font = Inconsolata 12
     geometry = "300x100-5+40"
-    separator_height = 1
-    separator_color = "#585858"
-    line_height = 2
-    sort = yes
-    transparency = 15
-    idle_threshold = 20
-    stack_duplicates = false
+    browser = chromium
+    plain_text = no
+    markup = yes
+    sort = no
+    indicate_hidden = no
+    alignment = center
+    stack_duplicates = yes
+    hide_duplicates_count = yes
+    ignore_newline = no
+    word_wrap = yes
+    shrink = no
+    transparency = 50
 
-    show_icon = bottom
-    icon_position = bottom
+    # age duration of notif. items
+    idle_threshold = 0
+    show_age_threshold = -1
 
-[frame]
-    width = 1
-    color = "#383838"
+    # History
+    history_length = 15
 
-[shortcuts]
-    context = ctrl+shift+period
-    history = ctrl+grave
-    close_all = ctrl+shift+grave
+    format = "<span><b>%s</b></span>\n%b"
+    padding = 6
+    horizontal_padding = 6
+    separator_color = frame
+    startup_notification = false
+    separator_height = 2
+    line_height = 3
+    frame_width = 3
 
-[urgency_low]
-    background = "#181818"
-    foreground = "#8F9D6A"
+    frame_color = "#e68db9"
     timeout = 5
 
+[urgency_low]
+    foreground = "#0f0f0f"
+    background = "#fffaff"
+
 [urgency_normal]
-    background = "#181818"
-    FOREGROUND = "#A8BBD1"
-    timeout = 15
+    foreground = "#0f0f0f"
+    background = "#fffaff"
 
 [urgency_critical]
-    background = "#181818"
-    foreground = "#CF6A4C"
-    timeout = 30
+    foreground = "#0f0f0f"
+    background = "#fffaff"

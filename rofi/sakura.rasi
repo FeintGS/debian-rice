@@ -1,0 +1,59 @@
+configuration {
+	lines: 10;
+	columns: 2;
+	display-drun: "App: ";
+	fake-transparency: false;
+}
+
+* {
+	white: #fffaff;
+	black:#adadad;
+	pink: #ff69b4;
+
+	background-color: @white;
+	border-color: @black;
+	text-color: @pink;
+	font: "Noto Sans 13";
+}
+
+window {
+	border: 1px;
+
+	border-radius: 4px;
+	padding: 40px;
+	width: 50%;
+	height: 50%;
+	
+	/* border-shadow: ... */
+}
+
+mainbox {
+    children: [inputbar, listview];
+	spacing: 10px;
+	/*margin: 20%;*/
+	padding: 30px 0;
+	border: 0;
+	border-color: @base0D;
+}
+
+listview {
+    fixed-height: 0;
+    border: 0px;
+    spacing: 2px;
+    scrollbar: false;
+    padding: 2px 0px 0px;
+}
+
+element {
+	background-color: @white;
+	text-color: @pink;
+	
+	border-radius: 2px;
+}
+
+element selected.normal {
+	background-color: @pink;
+	text-color: @white;	
+
+	border-radius: 2px;
+}

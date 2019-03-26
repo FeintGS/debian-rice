@@ -2,7 +2,7 @@ configuration {
     modi: "window,run,ssh,drun";
 	terminal: "st";
     drun-icon-theme: "Numix";
-	theme: "material-dark";
+	theme: "sakura";
 
 	sort: true;
     show-icons: true;

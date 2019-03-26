@@ -36,6 +36,8 @@ width = 100%
 height = 25
 fixed-center = false
 cursor-click = pointer
+override-direct = true
+wm-restack = i3
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -50,7 +52,7 @@ border-bottom-size = 3
 border-bottom-color = ${colors.background-selected}
 
 ; module placements
-modules-left = bspwm
+modules-left = i3
 modules-center =
 modules-right = xbacklight alsa battery-combined-udev temperature wlan date
 
@@ -88,6 +90,37 @@ label-occupied-foreground = ${colors.foreground}
 label-urgent = %index%
 label-urgent-background = ${colors.background-urgent}
 label-urgent-foreground = ${colors.foreground-urgent}
+
+[module/i3]
+type = internal/i3
+index-sort = true
+enable-click = true
+enable-scroll = false
+
+;label-mode = %index%
+;label-mode-padding = 2
+;label-mode-foreground = ${colors.foreground}
+;label-mode-background = ${colors.background}
+
+label-focused = %index%
+label-focused-foreground = ${colors.foreground-selected}
+label-focused-background = ${colors.background-selected}
+label-focused-padding = 4
+
+label-unfocused = %index%
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-background = ${colors.background}
+label-unfocused-padding = 4
+
+label-visible = %index%
+label-visible-foreground = ${colors.foreground}
+label-visible-background = ${colors.background}
+label-visible-padding = 4
+
+label-urgent = %index%
+label-urgent-foreground = ${colors.foreground-urgent}
+label-urgent-background = ${colors.background-urgent}
+label-urgent-padding = 4
 
 [module/mpd]
 type = internal/mpd
@@ -165,6 +198,8 @@ label-connected = %essid%  %downspeed:0:9%  %upspeed:0:9%
 format-disconnected = <label-disconnected>
 label-disconnected = %ifname% disconnected
 label-disconnected-foreground = ${colors.foreground-disabled}
+
+click-left = "$HOME/.config/polybar/notify.sh"
 
 [module/eth]
 type = internal/network
@@ -271,5 +306,9 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-disabled}
+
+[global/wm]
+margin-bottom = 3	; used for top-aligned bars
+margin-top = 3 		; used for bottom-aligned bars
 
 ; vim:ft=dosini
