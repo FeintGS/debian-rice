@@ -1,0 +1,50 @@
+use_xft Yes
+xftfont 123:size=5
+xftalpha 1.0
+update_interval 1
+total_run_times 0
+
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_colour ffffff
+own_window_argb_visual no
+own_window_argb_value 0
+
+double_buffer yes
+#minimum_size 250 5
+#maximum_width 500
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color black
+default_outline_color gray
+alignment bottom_left
+gap_x 5
+gap_y 40
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale Yes
+use_spacer yes
+
+
+minimum_size 0 0
+TEXT
+${voffset 10}${color EAEAEA}${font Noto Sans:size=130}${time %H:%M}${font}${voffset -94}${offset 720}${color E68DB9}${font Noto Sans:size=45}${time %d} ${voffset -10}${offset 2}${color EAEAEA}${font Noto Sans:size=22}${time  %B} ${time %Y}${font}${voffset 19}${font Noto Sans:size=50}${offset -130}${time %A}${font}
+
+
+
+
+
+
+
+
+
+
+
+

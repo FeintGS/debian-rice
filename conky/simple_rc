@@ -1,9 +1,0 @@
-conky.text = [[
-${color1}■ ${color} Hello, ${execi 60 whoami}
-
-${color2}■ ${color} Today will be ${execi 1800 ~/.config/conky/sidekick/res/weather}
-
-${color3}■ ${color} ${execi 1800 ~/.config/conky/sidekick/res/weather -t}
-
-${color4}■ ${color} Here is some wise words for You..
-]];

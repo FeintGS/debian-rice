@@ -1,7 +1,4 @@
 #!/bin/bash
 
 pkill conky
-conky -dq -c $HOME/.config/conky/system_rc
-conky -dq -c $HOME/.config/conky/network_rc
-conky -dq -c $HOME/.config/conky/album_rc
-conky -dq -c $HOME/.config/conky/mpd_rc
+conky -dq -c $HOME/.config/conky/clock_rc
