@@ -4,9 +4,6 @@
 	<strong>My collection of dotfiles for a perfect computing experience</strong>
 </div>
 <div align="center">
-    Made with way too much love
-</div>
-<div align="center">
   <h3>
     <a href="#Features">Features</a>
     <span> | </span>
