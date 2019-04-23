@@ -18,7 +18,7 @@
   </h3>
 </div>
 <div align="center">
-	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, soon™
+	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, Soon™
 </div>
 
 # Features
