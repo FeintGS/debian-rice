@@ -1,9 +1,8 @@
-<div align="center"><h1>lDebian Rice</h1></div>
+<div align="center"><h1>Debian Rice</h1></div>
 
 <div align="center">
-	<strong>Collection of dotfiles for a perfect computing experience</strong>
+	<strong>My collection of dotfiles for a perfect computing experience</strong>
 </div>
-
 <div align="center">
   <h3>
     <a href="#Features">
@@ -31,7 +30,6 @@
     </a>
   </h3>
 </div>
-
 <div align="center">
 	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, soon(TM)
 </div>
