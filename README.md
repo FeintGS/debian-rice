@@ -27,15 +27,3 @@
 	* Eliminates necessity of carrying additional peripherals (i.e. computer mice) for a productive computing experience
 	* Prolongs laptop battery life, minimizing resource utilization
 * Combines beautiful aesthetics with low hardware requirements
-
-# Design Choices
-
-## Why Debian Sid/Buster, and not the Stable branch?
-
-## Why i3wm?
-
-# Installation
-
-# Contributing
-
-# License
