@@ -1,4 +1,4 @@
-# Debian Rice
+<div align="center"><h1>lDebian Rice</h1></div>
 
 <div align="center">
 	<strong>Collection of dotfiles for a perfect computing experience</strong>
