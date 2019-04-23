@@ -10,6 +10,8 @@
     <span> | </span>
     <a href="#Installation">Installation</a>
     <span> | </span>
+    <a href="#Usage-guide">Usage guide</a>
+    <span> | </span>
     <a href="#Contributing">Contributing</a>
     <span> | </span>
     <a href="#License">License</a>
