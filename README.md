@@ -1,5 +1,4 @@
 <div align="center"><h1>Debian Rice</h1></div>
-
 <div align="center">
 	<strong>My collection of dotfiles for a perfect computing experience</strong>
 </div>
