@@ -18,7 +18,6 @@
 <div align="center">
 	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, soon(TM)
 </div>
-</hr>
 
 # Features
 
