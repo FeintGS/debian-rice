@@ -7,11 +7,9 @@
   <h3>
     <a href="#Features">Features</a>
     <span> | </span>
-    <a href="#Prerequisites">Prerequisites</a>
+    <a href="#Design-choices">Design choices</a>
     <span> | </span>
     <a href="#Installation">Installation</a>
-    <span> | </span>
-    <a href="#Design-choices">Design choices</a>
     <span> | </span>
     <a href="#Contributing">Contributing</a>
     <span> | </span>
@@ -39,8 +37,6 @@
 
 # Installation
 
-
 # Contributing
 
 # License
-
