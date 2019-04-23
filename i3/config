@@ -1,0 +1,186 @@
+# vim: filetype=i3
+
+# #---Beginning Definitions---# #
+set $mod mod4
+floating_modifier $mod
+focus_follows_mouse no
+
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 10
+
+# #---Startup Services---# #
+exec_always --no-startup-id $HOME/.config/compton/launch
+exec_always --no-startup-id feh --bg-fill $HOME/.config/wallpaper-night.png
+exec_always --no-startup-id $HOME/.config/polybar/launch
+exec_always --no-startup-id $HOME/.config/conky/launch
+exec_always --no-startup-id $HOME/.config/mpd/mpd_nowplaying
+exec --no-startup-id mpd
+exec --no-startup-id dunst
+exec --no-startup-id nm-applet
+exec --no-startup-id xset dpms 300
+
+# #---Color Palette---# #
+
+set $main	#FF69B4
+set $alt	#FFFAFF
+set $border #454545
+
+# class                 border  bground text    indic.	child_border
+client.focused          $main	$main	$alt	$main	$main
+client.focused_inactive $alt	$alt	$main	$alt	$alt
+client.unfocused        $alt	$alt	$main	$alt	$alt
+client.urgent           #F00000 #F00000 #FFFFFF #F00000 #F00000
+client.placeholder      $alt	$alt	$main   $alt    $alt
+
+# #---Dropdown utility windows---# #
+for_window [instance="dropdown_(term|calc)"] floating enable
+for_window [instance="dropdown_(term|calc)"] move scratchpad
+for_window [instance="dropdown_(term|calc)"] sticky enable
+for_window [instance="dropdown_(term|calc)"] scratchpad show
+for_window [instance="dropdown_(term|calc)"] move position center ;; scratchpad show
+
+for_window [class="Nautilus|Gmpc|Thunderbird"] floating enable
+for_window [class="Nautilus|Gmpc|Thunderbird"] move scratchpad
+for_window [class="Nautilus|Gmpc|Thunderbird"] sticky enable
+for_window [class="Nautilus|Gmpc|Thunderbird"] scratchpad show
+for_window [class="Nautilus|Gmpc|Thunderbird"] move position center # ;; scratchpad show
+
+set $i3_path $HOME/.config/i3
+bindsym $mod+a exec $i3_path/dropdown_calc          ;; [instance="dropdown_calc"] scratchpad show
+bindsym $mod+u exec $i3_path/dropdown_term          ;; [instance="dropdown_term"] scratchpad show
+bindsym $mod+m exec $i3_path/dropdown_musicplayer   ;; [class="Gmpc"] scratchpad show
+bindsym $mod+f exec $i3_path/dropdown_filemanager   ;; [class="Nautilus"] scratchpad show
+bindsym $mod+e exec $i3_path/dropdown_email         ;; [class="Thunderbird"] scratchpad show
+
+# #---Window Behaviors---# #
+# Default aesthetics
+default_border normal 3
+default_floating_border normal 3
+hide_edge_borders none
+gaps inner 5
+gaps outer 5
+
+# Titlebar
+font pango:Inconsolata 13
+for_window [class=".*"] title_format "<b>%title</b>"
+for_window [class="Chromium"] border pixel 1	# Disables the titlebar
+for_window [class="Firefox"] border pixel 1	# Disables the titlebar
+
+# Application windows which are usually designed by devs to be floating
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+
+# Specific userspace applications that should be floating when open
+for_window [class="feh"] floating enable
+
+# File chooser dialog (default behavior: floating)
+for_window [window_role="GtkFileChooserDialog"] resize set 1000 600
+for_window [window_role="GtkFileChooserDialog"] move position center
+for_window [window_role="GtkFileChooserDialog"] floating enable
+
+# #---WM tiling controls---# #
+# switch to workspace
+bindsym $mod+1		workspace $ws1
+bindsym $mod+2		workspace $ws2
+bindsym $mod+3		workspace $ws3
+bindsym $mod+4		workspace $ws4
+bindsym $mod+5		workspace $ws5
+bindsym $mod+6		workspace $ws6
+bindsym $mod+7		workspace $ws7
+bindsym $mod+8		workspace $ws8
+bindsym $mod+9		workspace $ws9
+bindsym $mod+0		workspace $ws10
+
+# switch to prev/next workspace
+bindsym  $mod+minus   workspace prev
+bindsym  $mod+plus    workspace next
+
+# switch to previously focused workspace
+bindsym $mod+Tab    workspace back_and_forth
+
+# move focused container to workspace
+bindsym $mod+Shift+1	move container to workspace $ws1
+bindsym $mod+Shift+2	move container to workspace $ws2
+bindsym $mod+Shift+3	move container to workspace $ws3
+bindsym $mod+Shift+4	move container to workspace $ws4
+bindsym $mod+Shift+5	move container to workspace $ws5
+bindsym $mod+Shift+6	move container to workspace $ws6
+bindsym $mod+Shift+7	move container to workspace $ws7
+bindsym $mod+Shift+8	move container to workspace $ws8
+bindsym $mod+Shift+9	move container to workspace $ws9
+bindsym $mod+Shift+0	move container to workspace $ws10
+
+# toggles
+bindsym $mod+bracketleft    split h ;; \
+    exec notify-send -u low 'i3' 'Entering horizontal split mode'
+bindsym $mod+bracketright   split v ;; \
+    exec notify-send -u low 'i3' 'Entering vertical split mode'
+bindsym $mod+Shift+f	    fullscreen toggle
+bindsym $mod+space		    [con_id="__focused__" instance="^(?!dropdown_).*$"] floating toggle
+bindsym $mod+Shift+space    sticky toggle
+
+# restart i3 config
+bindsym $mod+Shift+c	reload ;; restart
+
+# quit session
+bindsym $mod+Shift+x	exit
+
+# kill focused window
+bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$" class="^(?!Nautilus|Gmpc|Thunderbird).*$"] kill
+bindsym $mod+Shift+q	[con_id="__focused__" instance="^(?!dropdown_).*$" class="^(?!Nautilus|Gmpc|Thunderbird).*$"] kill
+
+# #---Focus Direction---#
+# don't allow window focus to "wrap around"
+focus_wrapping no
+
+# arrow keys
+bindsym $mod+Left		focus left
+bindsym $mod+Down		focus down
+bindsym $mod+Up			focus up
+bindsym $mod+Right 		focus right
+
+bindsym $mod+Shift+Left		move left
+bindsym $mod+Shift+Down		move down
+bindsym $mod+Shift+Up		move up
+bindsym $mod+Shift+Right 	move right
+
+# vim-style bindings
+bindsym $mod+h			focus left
+bindsym $mod+j			focus down
+bindsym $mod+k			focus up
+bindsym $mod+l			focus right
+
+bindsym $mod+Shift+h		move left 30
+bindsym $mod+Shift+j		move down 30
+bindsym $mod+Shift+k		move up 30
+bindsym $mod+Shift+l		move right 30
+
+# #---Application programs---# #
+bindsym $mod+Return split horizontal; exec --no-startup-id st
+bindsym $mod+slash split vertical; exec --no-startup-id st
+
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+i exec --no-startup-id $HOME/.config/i3/rofi_emojimenu
+bindsym $mod+w exec --no-startup-id chromium
+
+# #---Special Fn/Misc keys---#
+bindsym XF86AudioMute		    exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioLowerVolume	exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioRaiseVolume	exec --no-startup-id pactl set-sink-volume 0 +5%
+
+bindsym XF86MonBrightnessDown	exec --no-startup-id xbacklight -dec 5
+bindsym XF86MonBrightnessUp	    exec --no-startup-id xbacklight -inc 5
+
+bindsym Print 			        exec --no-startup-id maim -u pic-full-"$(date '+%y%m%d-%H%M-%S').png"

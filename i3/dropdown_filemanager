@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if ! pgrep -f nautilus > /dev/null
+then
+    nautilus
+fi

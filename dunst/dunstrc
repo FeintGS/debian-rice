@@ -1,34 +1,39 @@
 [global]
     font = Inconsolata 12
-    geometry = "300x100-5+40"
+    geometry = "400x225-5+40"
     browser = chromium
     plain_text = no
     markup = yes
     sort = no
     indicate_hidden = no
-    alignment = center
-    stack_duplicates = yes
+    alignment = left
+    stack_duplicates = no
     hide_duplicates_count = yes
+    sticky_history = no
     ignore_newline = no
     word_wrap = yes
-    shrink = no
-    transparency = 50
+    shrink = yes
+    transparency = 25
 
     # age duration of notif. items
+    set_transient = yes
     idle_threshold = 0
     show_age_threshold = -1
 
     # History
-    history_length = 15
+    history_length = 1
 
     format = "<span><b>%s</b></span>\n%b"
     padding = 6
     horizontal_padding = 6
     separator_color = frame
     startup_notification = false
-    separator_height = 2
+    separator_height = 1
     line_height = 3
     frame_width = 3
+
+    icon_position = left
+    max_icon_size = 75
 
     frame_color = "#e68db9"
     timeout = 5
@@ -36,11 +41,14 @@
 [urgency_low]
     foreground = "#0f0f0f"
     background = "#fffaff"
+    timeout = 2
 
 [urgency_normal]
     foreground = "#0f0f0f"
     background = "#fffaff"
+    timeout = 3
 
 [urgency_critical]
     foreground = "#0f0f0f"
     background = "#fffaff"
+    timeout = 5

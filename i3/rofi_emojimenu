@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat $HOME/.config/i3/emoji_list | rofi -dmenu | cut -c1-4 | xclip -sel clipboard

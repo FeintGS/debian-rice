@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if ! pgrep -f "dropdown_terminal" > /dev/null
+then
+    st -n "dropdown_terminal" -e tmux attach -t Main || tmux new-session -s Main
+fi

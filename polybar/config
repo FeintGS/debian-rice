@@ -193,13 +193,11 @@ format-connected = <label-connected>
 format-packetloss-prefix = " "
 format-packetloss = <label-connected>
 
-label-connected = %essid%  %downspeed:0:9%  %upspeed:0:9%
+label-connected = %{A1:$HOME/.config/polybar/wlan-click.sh:}%essid%%{A}  %downspeed:0:9%  %upspeed:0:9%
 
 format-disconnected = <label-disconnected>
 label-disconnected = %ifname% disconnected
 label-disconnected-foreground = ${colors.foreground-disabled}
-
-click-left = "$HOME/.config/polybar/notify.sh"
 
 [module/eth]
 type = internal/network
@@ -231,6 +229,8 @@ label-foreground = ${colors.foreground-selected}
 type = custom/script
 exec = ~/.config/polybar/battery-combined-udev.sh
 tail = true
+
+click-left=$HOME/.config/polybar/click-handlers/batt-click.sh
 
 [module/battery]
 type = internal/battery
@@ -280,11 +280,13 @@ ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground}
 
+click-left=$HOME/.config/polybar/click-handlers/cpu-click.sh
+
 [module/pulseaudio]
 type = internal/pulseaudio
 
 sink = alsa_output.pci-0000_00_1b.0.analog-stereo
-use-ui-max = false
+use-ui-max = true
 interval = 5
 
 format-volume = <ramp-volume> <bar-volume>

@@ -33,6 +33,16 @@ print_info() {
     info "Memory" memory
     info "Battery" battery
 
+    # info "CPU Usage" cpu_usage
+    # info "Disk" disk
+    # info "Battery" battery
+    # info "Font" font
+    # info "Song" song
+    # info "Local IP" local_ip
+    # info "Public IP" public_ip
+    # info "Users" users
+    # info "Birthday" birthday
+
     info line_break
     info cols
     info line_break

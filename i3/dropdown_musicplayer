@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if ! pgrep -f gmpc > /dev/null
+then
+    gmpc
+fi

@@ -1,0 +1,45 @@
+#!/bin/bash
+METADATA_SCRIPT="$HOME/.config/mpd/mpd_metadata"
+PREV_SONG="$($METADATA_SCRIPT title)"
+PREV_STATUS="$($METADATA_SCRIPT mpd_status)"
+FILE_PATH_ART=""
+
+if pidof -o %PPID -x "mpd_nowplaying">/dev/null; then
+	echo "Another instance of this script is already running"
+	exit 1
+fi
+
+on_song_change() {
+    if [[ "$CURRENT_STATUS" = "playing" ]] && [[ $? == 0 ]] && [[ "$PREV_SONG" != "$CURRENT_SONG" ]]; then
+		tmp="$($METADATA_SCRIPT album_art 75)"
+
+		cp "$tmp" "$FILE_PATH_ART"
+		( sleep 1000; rm -rf $FILE_PATH_ART ) &
+
+        notify-send -u low --icon "$FILE_PATH_ART" \
+            "🎵 ~Now playing~ 🎵" \
+            "$CURRENT_SONG\n$CURRENT_ALBUM_NAME" 
+        return 0
+    fi
+    return 1
+}
+
+on_control_change() {
+    if [[ "PREV_STATUS" != "CURRENT_STATUS" ]]; then
+       notify-send -u low \
+           "🔧 MPD control status 🔧" --icon "/dev/null" \
+           "Now $CURRENT_STATUS"
+    fi
+}
+
+mpc idleloop | while read line; do
+    CURRENT_SONG="$($METADATA_SCRIPT title)"
+	CURRENT_ALBUM_NAME="$($METADATA_SCRIPT album)" 
+    CURRENT_STATUS="$($METADATA_SCRIPT mpd_status)"
+	FILE_PATH_ART="/tmp/$CURRENT_ALBUM_NAME.png"
+
+    on_song_change || on_control_change
+
+    PREV_SONG="$CURRENT_SONG"
+    PREV_STATUS="$CURRENT_STATUS"
+done

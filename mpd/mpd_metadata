@@ -1,0 +1,63 @@
+#!/bin/bash
+MPD_MUSIC_DIRECTORY="$HOME/Music"
+MPD_XDG_DIRECTORY="$HOME/.config/mpd"
+
+check_mpd_status() {
+    status_message=$(mpc status) 
+    line_count=$(echo "$status_message" | wc -l)
+
+    if [[ $line_count = 1 ]]; then
+        echo "offline"
+        return 1
+    else
+        echo "$status_message" | sed -n 2p | cut -d "[" -f2 | cut -d "]" -f1
+        return 0
+    fi
+}
+
+metadata_query() {
+    line=$(mpc --format %$1% | head -n 1)
+    echo $line
+}
+
+fetch_album_art() {
+    pixels=$1
+
+    placeholder="$MPD_XDG_DIRECTORY/placeholder.png"
+    album_folder=`dirname "$MPD_MUSIC_DIRECTORY/$(metadata_query file)"`
+    output_path="/tmp/mpd_albumart.png"
+
+	# get the cover image art
+	cover="$album_folder""/"`ls "$album_folder" | egrep "jpeg|jpg|png|gif" | head -n 1`;
+	convert "$cover" -resize "$pixels>x" "$output_path"
+
+    echo "$output_path"
+    exit 0
+}
+
+OPTION=$1
+if [ -z "$OPTION" ]; then
+    echo -e "Useful script for querying MPD's current playing song\n"
+    echo -e "Usage: mpd_metadata <option>"
+    echo -e "Options:"
+    echo -e "mpd_status\t\tCurrent status of MPD"
+    echo -e "title\t\tSong title"
+    echo -e "time\t\tSong duration"
+    echo -e "album\t\tAlbum name"
+    echo -e "album_art\t\tAlbum art (returns image file path stored in RAMdisk)"
+    echo -e "artist\t\tArtist"
+    echo -e "date\t\tPublication year"
+    echo -e "file\t\tFile path location"
+    exit 1
+fi
+
+if [ "$OPTION" = "album_art" ]; then
+    fetch_album_art 150
+    exit 0
+elif [ "$OPTION" = "mpd_status" ]; then
+    check_mpd_status
+    exit 0
+else
+    metadata_query "$OPTION"
+    exit 0
+fi

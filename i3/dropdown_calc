@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if ! pgrep -f "dropdown_calculator" > /dev/null
+then
+    st -n "dropdown_calculator" -e "qalc"
+fi
