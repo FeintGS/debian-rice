@@ -3,9 +3,6 @@
 <div align="center">
 	<strong>Collection of dotfiles for a perfect computing experience</strong>
 </div>
-<div align="center">
-	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, soon(TM)
-</div>
 
 <div align="center">
   <h3>
@@ -33,6 +30,10 @@
 		License
     </a>
   </h3>
+</div>
+
+<div align="center">
+	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, soon(TM)
 </div>
 
 # Features
