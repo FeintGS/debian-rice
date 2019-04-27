@@ -1,4 +1,5 @@
 #!/bin/bash
 
 pkill conky
-conky -dq -c $HOME/.config/conky/clock_rc
+conky -dq -c $HOME/.config/conky/time_rc
+conky -dq -c $HOME/.config/conky/date_rc
