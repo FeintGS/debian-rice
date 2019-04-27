@@ -29,3 +29,22 @@
 	* Eliminates necessity of carrying additional peripherals (i.e. computer mice) for a productive computing experience
 	* Prolongs laptop battery life, minimizing resource utilization
 * Combines beautiful aesthetics with low hardware requirements
+
+# Usage Guide
+
+## Windows and workspace manipulation
+
+<kbd>Super</kbd> + <kbd>0</kbd>–<kbd>9</kbd> Switch to workspace
+
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd>–<kbd>9</kbd> Move focused window to workspace
+
+
+## Applications
+
+
+## Menu launchers
+<kbd>Super</kbd> + <kbd>d</kbd> App instance
+
+<kbd>Super</kbd> + <kbd>i</kbd> Emoji insertion
+
+<kbd>Super</kbd> + <kbd>o</kbd> Unicode symbol insertion
