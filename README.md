@@ -6,9 +6,9 @@
   <h3>
     <a href="#Features">Features</a>
     <span> | </span>
-    <a href="#Installation">Installation</a>
-    <span> | </span>
     <a href="#Usage-guide">Usage guide</a>
+    <span> | </span>
+    <a href="#Installation">Installation</a>
     <span> | </span>
     <a href="#Design-choices">Design choices</a>
     <span> | </span>
@@ -41,6 +41,16 @@
 
 ## Applications
 
+## Pop-up utility programs
+<kbd>Super</kbd> + <kbd>a</kbd> Qalc calculator
+
+<kbd>Super</kbd> + <kbd>e</kbd> Mozilla Thunderbird email client
+
+<kbd>Super</kbd> + <kbd>u</kbd> Tmux terminal
+
+<kbd>Super</kbd> + <kbd>m</kbd> GNOME Music Player Daemon client
+
+<kbd>Super</kbd> + <kbd>f</kbd> GNOME Nautilus file manager
 
 ## Menu launchers
 <kbd>Super</kbd> + <kbd>d</kbd> App instance
