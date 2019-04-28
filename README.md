@@ -32,16 +32,16 @@
 
 # Usage Guide
 
-## Windows and workspace manipulation
+### Windows and workspace manipulation
 
 <kbd>Super</kbd> + <kbd>0</kbd>–<kbd>9</kbd> Switch to workspace
 
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd>–<kbd>9</kbd> Move focused window to workspace
 
 
-## Applications
+### Applications
 
-## Pop-up utility programs
+### Pop-up utility programs
 | Keybinding | Action |
 | :--------- | :----- |
 <kbd>Super</kbd> + <kbd>a</kbd> | Qalc calculator
@@ -50,7 +50,7 @@
 <kbd>Super</kbd> + <kbd>m</kbd> | GNOME Music Player Daemon client
 <kbd>Super</kbd> + <kbd>f</kbd> | GNOME Nautilus file manager
 
-## Rofi menu launcher
+### Rofi menu launcher
 
 | Keybinding | Action |
 | :--------- | :----- |
