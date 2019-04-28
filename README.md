@@ -44,6 +44,9 @@
 | :--------- | :----- |
 <kbd>Super</kbd> + <kbd>q</kbd> | Kill focused window
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>q</kbd> | Kill focused window
+<kbd>Super</kbd> + <kbd>Spacebar</kbd> | Toggle floating on/off state for currently focused window
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Spacebar</kbd> | Toggle sticky on/off state for currently focused window
+
 
 ### Applications
 
