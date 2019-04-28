@@ -52,9 +52,11 @@
 
 <kbd>Super</kbd> + <kbd>f</kbd> GNOME Nautilus file manager
 
-## Menu launchers
-<kbd>Super</kbd> + <kbd>d</kbd> App instance
+## Rofi menu launcher
+<kbd>Super</kbd> + <kbd>d</kbd> Launch new app instance
 
-<kbd>Super</kbd> + <kbd>i</kbd> Emoji insertion
+<kbd>Super</kbd> + <kbd>i</kbd> Insert emoji
 
-<kbd>Super</kbd> + <kbd>o</kbd> Unicode symbol insertion
+<kbd>Super</kbd> + <kbd>o</kbd> Insert unicode symbol
+
+
