@@ -77,6 +77,4 @@
 | <kbd>Super</kbd> + <kbd>d</kbd> | Launch new app instance |
 | <kbd>Super</kbd> + <kbd>i</kbd> | Insert emoji |
 | <kbd>Super</kbd> + <kbd>o</kbd> | Insert unicode symbol |
-
-
-
+</details>
