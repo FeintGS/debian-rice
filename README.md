@@ -69,6 +69,7 @@
 
 <details>
 <summary><strong>Rofi Dmenu</strong></summary>
+
 | Keybinding | Action |
 | :--------- | :----- |
 | <kbd>Super</kbd> + <kbd>d</kbd> | Launch new app instance |
