@@ -10,7 +10,7 @@
     <span> | </span>
     <a href="#Installation">Installation</a>
     <span> | </span>
-    <a href="#Design-choices">Design choices</a>
+    <a href="#Dependencies">Dependencies</a>
     <span> | </span>
     <a href="#Contributing">Contributing</a>
     <span> | </span>
@@ -78,3 +78,9 @@
 | <kbd>Super</kbd> + <kbd>i</kbd> | Insert emoji |
 | <kbd>Super</kbd> + <kbd>o</kbd> | Insert unicode symbol |
 </details>
+
+# Dependencies
+| Debian Package | Description | Type | Upstream |
+| :------------- | :---------- | :--- | :------- |
+| [Rofi](https://packages.debian.org/buster/rofi) | window switcher, run dialog and dmenu replacement | Application | https://github.com/davatorium/rofi |
+| [i3-wm](https://packages.debian.org/buster/i3-wm) | improved dynamic tiling window manager | Application | https://github.com/i3/i3 |
