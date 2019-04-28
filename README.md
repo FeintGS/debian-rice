@@ -87,3 +87,4 @@
 | Polybar | A fast and easy-to-use tool for creating status bars. | Application | https://github.com/jaagr/polybar |
 | [Conky](https://packages.debian.org/buster/conky-all) | Conky is a free, light-weight system monitor for X, that displays any kind of information on your desktop. | Application | https://github.com/brndnmtthws/conky
 | [mpd](https://packages.debian.org/buster/mpd) | Music Player Daemon | Application | https://github.com/MusicPlayerDaemon/MPD |
+| [dunst](https://packages.debian.org/buster/dunst) | Lightweight and customizable notification daemon | Application | https://github.com/dunst-project/dunst |
