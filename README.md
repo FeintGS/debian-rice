@@ -32,13 +32,18 @@
 
 # Usage Guide
 
-### Windows and workspace manipulation
+### Workspace management
 
 | Keybinding | Action |
 | :--------- | :----- |
-<kbd>Super</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Switch to workspace
-<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Move focused window to workspace
+<kbd>Super</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Focus workspace N
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Move to workspace N
 
+### Window management
+| Keybinding | Action |
+| :--------- | :----- |
+<kbd>Super</kbd> + <kbd>q</kbd> | Kill focused window
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>q</kbd> | Kill focused window
 
 ### Applications
 
