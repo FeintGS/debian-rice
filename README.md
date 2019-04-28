@@ -50,8 +50,9 @@
 <kbd>Super</kbd> + <kbd>u</kbd> | Tmux terminal
 <kbd>Super</kbd> + <kbd>m</kbd> | GNOME Music Player Daemon client
 <kbd>Super</kbd> + <kbd>f</kbd> | GNOME Nautilus file manager
+<kbd>Super</kbd> + <kbd>t</kbd> | GNOME Resource Monitor
 
-### Rofi menu launcher
+### Rofi Dmenu
 
 | Keybinding | Action |
 | :--------- | :----- |
