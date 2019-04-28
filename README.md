@@ -34,9 +34,10 @@
 
 ### Windows and workspace manipulation
 
-<kbd>Super</kbd> + <kbd>0</kbd>–<kbd>9</kbd> Switch to workspace
-
-<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd>–<kbd>9</kbd> Move focused window to workspace
+| Keybinding | Action |
+| :--------- | :----- |
+<kbd>Super</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Switch to workspace
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Move focused window to workspace
 
 
 ### Applications
