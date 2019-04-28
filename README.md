@@ -32,24 +32,31 @@
 
 # Usage Guide
 
-### Workspace management
-
+<details>
+<summary><strong>Workspace management</strong></summary>
+	
 | Keybinding | Action |
 | :--------- | :----- |
 <kbd>Super</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Focus workspace N
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Move to workspace N
+</details>
 
-### Window management
+<details>
+<summary><strong>Window management</strong></summary>
+	
 | Keybinding | Action |
 | :--------- | :----- |
 <kbd>Super</kbd> + <kbd>q</kbd> | Kill focused window
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>q</kbd> | Kill focused window
 <kbd>Super</kbd> + <kbd>Spacebar</kbd> | Toggle floating on/off state for currently focused window
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Spacebar</kbd> | Toggle sticky on/off state for currently focused window
+</details>
 
 ### Applications
 
-### Pop-up utility programs
+<details>
+<summary><strong>Pop-up utility programs</strong></summary>
+	
 | Keybinding | Action |
 | :--------- | :----- |
 <kbd>Super</kbd> + <kbd>a</kbd> | Qalc calculator
@@ -58,9 +65,10 @@
 <kbd>Super</kbd> + <kbd>m</kbd> | GNOME Music Player Daemon client
 <kbd>Super</kbd> + <kbd>f</kbd> | GNOME Nautilus file manager
 <kbd>Super</kbd> + <kbd>t</kbd> | GNOME Resource Monitor
+</details>
 
-### Rofi Dmenu
-
+<details>
+<summary><strong>Rofi Dmenu</strong></summary>
 | Keybinding | Action |
 | :--------- | :----- |
 | <kbd>Super</kbd> + <kbd>d</kbd> | Launch new app instance |
