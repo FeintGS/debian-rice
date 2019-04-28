@@ -82,5 +82,7 @@
 # Dependencies
 | Debian Package | Description | Type | Upstream |
 | :------------- | :---------- | :--- | :------- |
-| [Rofi](https://packages.debian.org/buster/rofi) | window switcher, run dialog and dmenu replacement | Application | https://github.com/davatorium/rofi |
-| [i3-wm](https://packages.debian.org/buster/i3-wm) | improved dynamic tiling window manager | Application | https://github.com/i3/i3 |
+| [Rofi](https://packages.debian.org/buster/rofi) | A window switcher, Application launcher and dmenu replacement | Application | https://github.com/davatorium/rofi |
+| [i3-wm](https://packages.debian.org/buster/i3-wm) | Improved dynamic tiling window manager | Application | https://github.com/i3/i3 |
+| Polybar | A fast and easy-to-use tool for creating status bars. | Application | https://github.com/jaagr/polybar |
+| [Conky](https://packages.debian.org/buster/conky-all) | Conky is a free, light-weight system monitor for X, that displays any kind of information on your desktop. | Application | https://github.com/brndnmtthws/conky
