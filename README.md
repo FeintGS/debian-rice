@@ -32,6 +32,8 @@
 
 # Usage Guide
 
+### Basic Controls
+
 <details>
 <summary><strong>Workspace management</strong></summary>
 	
