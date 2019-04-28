@@ -47,7 +47,6 @@
 <kbd>Super</kbd> + <kbd>Spacebar</kbd> | Toggle floating on/off state for currently focused window
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Spacebar</kbd> | Toggle sticky on/off state for currently focused window
 
-
 ### Applications
 
 ### Pop-up utility programs
