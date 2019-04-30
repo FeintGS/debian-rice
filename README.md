@@ -95,3 +95,6 @@
 | [gmpc](https://packages.debian.org/buster/gmpc) | GNOME Music Player Client (graphical interface to MPD) | https://gmpclient.org/ |
 | [nautilus](https://packages.debian.org/buster/nautilus) | File manager and graphical shell for GNOME | https://gitlab.gnome.org/GNOME/Nautilus |
 | [mpv](https://packages.debian.org/buster/mpv) | Video player based on MPlayer/mplayer2 | https://github.com/mpv-player/mpv |
+| nmcli |
+| pulseaudio |
+| NetworkManager |
