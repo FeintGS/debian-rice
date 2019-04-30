@@ -80,16 +80,16 @@
 </details>
 
 # Dependencies
-| Debian Package | Description | Type | Upstream |
-| :------------- | :---------- | :--- | :------- |
-| [Rofi](https://packages.debian.org/buster/rofi) | A window switcher, Application launcher and dmenu replacement | Application | https://github.com/davatorium/rofi |
-| [i3-wm](https://packages.debian.org/buster/i3-wm) | Improved dynamic tiling window manager | Application | https://github.com/i3/i3 |
-| Polybar | A fast and easy-to-use tool for creating status bars. | Application | https://github.com/jaagr/polybar |
-| [Conky](https://packages.debian.org/buster/conky-all) | Conky is a free, light-weight system monitor for X, that displays any kind of information on your desktop. | Application | https://github.com/brndnmtthws/conky
-| [mpd](https://packages.debian.org/buster/mpd) | Music Player Daemon | Application | https://github.com/MusicPlayerDaemon/MPD |
-| [dunst](https://packages.debian.org/buster/dunst) | Lightweight and customizable notification daemon | Application | https://github.com/dunst-project/dunst |
-| [qalculate](https://packages.debian.org/buster/qalculate) | Powerful and easy to use desktop calculator | Application | https://qalculate.github.io/ |
-| [Chromium](https://packages.debian.org/buster/chromium) | Web browser that aims to build a safer, faster, and more stable internet browsing experience. | Application | https://chromium.googlesource.com/chromium/src.git |
+| Debian Package | Description | Upstream |
+| :------------- | :---------- | :------- |
+| [Rofi](https://packages.debian.org/buster/rofi) | A window switcher, Application launcher and dmenu replacement | https://github.com/davatorium/rofi |
+| [i3-wm](https://packages.debian.org/buster/i3-wm) | Improved dynamic tiling window manager | https://github.com/i3/i3 |
+| Polybar | A fast and easy-to-use tool for creating status bars. | https://github.com/jaagr/polybar |
+| [Conky](https://packages.debian.org/buster/conky-all) | Conky is a free, light-weight system monitor for X, that displays any kind of information on your desktop. | https://github.com/brndnmtthws/conky
+| [mpd](https://packages.debian.org/buster/mpd) | Music Player Daemon | https://github.com/MusicPlayerDaemon/MPD |
+| [dunst](https://packages.debian.org/buster/dunst) | Lightweight and customizable notification daemon | https://github.com/dunst-project/dunst |
+| [qalculate](https://packages.debian.org/buster/qalculate) | Powerful and easy to use desktop calculator | https://qalculate.github.io/ |
+| [Chromium](https://packages.debian.org/buster/chromium) | Web browser that aims to build a safer, faster, and more stable internet browsing experience. | https://chromium.googlesource.com/chromium/src.git |
 | [feh](https://packages.debian.org/buster/feh) | imlib2 based image viewer | https://git.finalrewind.org/feh |
 | [compton](https://packages.debian.org/buster/compton) | compositor for X11, based on xcompmgr | https://github.com/chjj/compton |
 | [gmpc](https://packages.debian.org/buster/gmpc) | GNOME Music Player Client (graphical interface to MPD) | https://gmpclient.org/ |
