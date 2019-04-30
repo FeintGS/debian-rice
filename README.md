@@ -88,3 +88,5 @@
 | [Conky](https://packages.debian.org/buster/conky-all) | Conky is a free, light-weight system monitor for X, that displays any kind of information on your desktop. | Application | https://github.com/brndnmtthws/conky
 | [mpd](https://packages.debian.org/buster/mpd) | Music Player Daemon | Application | https://github.com/MusicPlayerDaemon/MPD |
 | [dunst](https://packages.debian.org/buster/dunst) | Lightweight and customizable notification daemon | Application | https://github.com/dunst-project/dunst |
+| [qalculate](https://packages.debian.org/buster/qalculate) | Powerful and easy to use desktop calculator | Application | https://qalculate.github.io/ |
+| [Chromium](https://packages.debian.org/buster/chromium) | Web browser that aims to build a safer, faster, and more stable internet browsing experience. | Application | https://chromium.googlesource.com/chromium/src.git |
