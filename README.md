@@ -92,4 +92,4 @@
 | [Chromium](https://packages.debian.org/buster/chromium) | Web browser that aims to build a safer, faster, and more stable internet browsing experience. | Application | https://chromium.googlesource.com/chromium/src.git |
 | [feh](https://packages.debian.org/buster/feh) | imlib2 based image viewer | https://git.finalrewind.org/feh |
 | [compton](https://packages.debian.org/buster/compton) | compositor for X11, based on xcompmgr | https://github.com/chjj/compton |
-
+| [gmpc](https://packages.debian.org/buster/gmpc) | GNOME Music Player Client (graphical interface to MPD) | https://gmpclient.org/ |
