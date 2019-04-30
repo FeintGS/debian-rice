@@ -93,3 +93,5 @@
 | [feh](https://packages.debian.org/buster/feh) | imlib2 based image viewer | https://git.finalrewind.org/feh |
 | [compton](https://packages.debian.org/buster/compton) | compositor for X11, based on xcompmgr | https://github.com/chjj/compton |
 | [gmpc](https://packages.debian.org/buster/gmpc) | GNOME Music Player Client (graphical interface to MPD) | https://gmpclient.org/ |
+| [nautilus](https://packages.debian.org/buster/nautilus) | File manager and graphical shell for GNOME | https://gitlab.gnome.org/GNOME/Nautilus |
+
