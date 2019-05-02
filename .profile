@@ -16,10 +16,14 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# set PATH so it includes user's private bin if it exists
+# set PATH
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
+fi
+if [ -d "/opt" ] ; then
+    PATH="/opt:$PATH"
 fi
 
 # MPD daemon start (if no other user instance exists)
 [ ! -s ~/.config/mpd/pid ] && mpd
+export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
