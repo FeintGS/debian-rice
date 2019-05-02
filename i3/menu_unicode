@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat $HOME/.config/i3/unicode_list | rofi -dmenu -i -p "Unicode: " | sed "s/ .*//" | xargs xdotool type

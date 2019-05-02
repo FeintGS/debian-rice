@@ -33,7 +33,7 @@ minimum_size 0 0
 
 TEXT
 ${voffset 0}${color FEFEFE}${font Noto Sans:size=130}${time %H:%M}
-${voffset -212}${offset 30}${font Ubuntu:pixelsize=15}${color E68DB9}HD \
+${voffset -212}${offset 20}${font Ubuntu:pixelsize=15}${color E68DB9}HD \
         ${offset -20}$color${fs_free /common_storage} / ${fs_size /common_storage} \
 ${offset 15}${color E68DB9}RAM \
         ${offset -20}$color$mem / $memmax \

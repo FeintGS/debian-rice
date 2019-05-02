@@ -1,19 +1,20 @@
 [global]
     font = Inconsolata 12
-    geometry = "400x225-5+40"
+    geometry = "500x250-5+40"
     browser = chromium
     plain_text = no
     markup = yes
     sort = no
     indicate_hidden = no
     alignment = left
-    stack_duplicates = no
+    stack_duplicates = yes
     hide_duplicates_count = yes
     sticky_history = no
     ignore_newline = no
     word_wrap = yes
-    shrink = yes
-    transparency = 25
+    shrink = no
+    transparency = 10
+    corner_radius = 3
 
     # age duration of notif. items
     set_transient = yes
@@ -24,16 +25,16 @@
     history_length = 1
 
     format = "<span><b>%s</b></span>\n%b"
-    padding = 6
-    horizontal_padding = 6
+    padding = 5
+    horizontal_padding = 5
     separator_color = frame
     startup_notification = false
     separator_height = 1
     line_height = 3
     frame_width = 3
 
-    icon_position = left
-    max_icon_size = 75
+    icon_path=""          # disable default icons
+    icon_position = right
 
     frame_color = "#e68db9"
     timeout = 5

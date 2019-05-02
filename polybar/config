@@ -17,18 +17,27 @@
 ;==========================================================
 
 [colors]
-white = #fffaff
-pink = #ff00ff
+emergency = #ffff0000
 
-background = #fffaff
-background-selected = ${self.foreground}
-background-disabled = ${self.background}
-background-urgent = #ff00ff	;placeholder
+white_opaque = #fffffaff
+pink_opaque = #ffff008f
+black_opaque = #ffffffff
+grey_opaque = #ffcccccc
 
-foreground = #ff69b4
-foreground-selected = ${self.background}
-foreground-disabled = #ccc
-foreground-urgent = #ff00ff	;placeholder
+white_translucent = #affafafa
+pink_translucent = #55ff008f
+black_translucent = #55ffffff
+grey_translucent = #55cccccc
+
+background = ${self.white_translucent}
+background-selected = ${self.pink_opaque}
+background-disabled = ${self.pink_translucent}
+background-urgent = ${self.black_opaque}
+
+foreground = ${self.pink_opaque}
+foreground-selected = ${self.white_opaque}
+foreground-disabled = ${self.pink_translucent}
+foreground-urgent = ${self.emergency}
 
 [bar/top]
 monitor = eDP1
@@ -193,7 +202,7 @@ format-connected = <label-connected>
 format-packetloss-prefix = " "
 format-packetloss = <label-connected>
 
-label-connected = %{A1:$HOME/.config/polybar/wlan-click.sh:}%essid%%{A}  %downspeed:0:9%  %upspeed:0:9%
+label-connected = %{A1:$HOME/.config/polybar/ssid-click.sh:}%essid%%{A} %{A1:$HOME/.config/polybar/linkspeed-click.sh:} %downspeed:0:9%  %upspeed:0:9%%{A}
 
 format-disconnected = <label-disconnected>
 label-disconnected = %ifname% disconnected
@@ -225,6 +234,8 @@ label = %date% %time%
 label-background = ${colors.background-selected}
 label-foreground = ${colors.foreground-selected}
 
+date-alt = "asdf"
+
 [module/battery-combined-udev]
 type = custom/script
 exec = ~/.config/polybar/battery-combined-udev.sh
@@ -232,60 +243,29 @@ tail = true
 
 click-left=$HOME/.config/polybar/click-handlers/batt-click.sh
 
-[module/battery]
-type = internal/battery
-battery = BAT1
-adapter = AC
-full-at = 98
-
-;format-charging = <animation-charging> <label-charging>
-format-charging =   <label-charging>
-
-format-discharging = <animation-discharging> <label-discharging>
-
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground}
-animation-charging-framerate = 750
-
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-foreground = ${colors.foreground}
-animation-discharging-framerate = 750
-
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 60
 
-format = <ramp> <label>
+format =%{A1:$HOME/.config/polybar/click-handlers/batt-click.sh:}<ramp> <label>%{A}
 format-warn = <ramp> <label-warn>
 
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-foreground = ${colors.foreground-urgent}
+label-warn-foreground = ${colors.emergency}
 
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground}
+ramp-urgent-foreground = ${colors.emergency}
 
-click-left=$HOME/.config/polybar/click-handlers/cpu-click.sh
+click-left=$HOME/.config/polybar/click-handlers/batt-click.sh
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
-sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 use-ui-max = true
 interval = 5
 

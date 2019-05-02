@@ -17,18 +17,18 @@ set $ws9 9
 set $ws10 10
 
 # #---Startup Services---# #
-exec_always --no-startup-id $HOME/.config/compton/launch
-exec_always --no-startup-id feh --bg-fill $HOME/.config/wallpaper-night.png
+exec_always --no-startup-id feh --bg-fill $HOME/.config/wallpaper-day.png
 exec_always --no-startup-id $HOME/.config/polybar/launch
 exec_always --no-startup-id $HOME/.config/conky/launch
 exec_always --no-startup-id $HOME/.config/mpd/mpd_nowplaying
+exec_always --no-startup-id unagi &
+exec --no-startup-id pulseaudio -D
 exec --no-startup-id mpd
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet
 exec --no-startup-id xset dpms 300
 
 # #---Color Palette---# #
-
 set $main	#FF69B4
 set $alt	#FFFAFF
 set $border #454545
@@ -47,26 +47,53 @@ for_window [instance="dropdown_(term|calc)"] sticky enable
 for_window [instance="dropdown_(term|calc)"] scratchpad show
 for_window [instance="dropdown_(term|calc)"] move position center ;; scratchpad show
 
-for_window [class="Nautilus|Gmpc|Thunderbird"] floating enable
-for_window [class="Nautilus|Gmpc|Thunderbird"] move scratchpad
-for_window [class="Nautilus|Gmpc|Thunderbird"] sticky enable
-for_window [class="Nautilus|Gmpc|Thunderbird"] scratchpad show
-for_window [class="Nautilus|Gmpc|Thunderbird"] move position center # ;; scratchpad show
+for_window [class="Nautilus|Gmpc|Thunderbird|Gnome-system-monitor"] floating enable
+for_window [class="Nautilus|Gmpc|Thunderbird|Gnome-system-monitor"] move scratchpad
+for_window [class="Nautilus|Gmpc|Thunderbird|Gnome-system-monitor"] sticky enable
+for_window [class="Nautilus|Gmpc|Thunderbird|Gnome-system-monitor"] scratchpad show
+for_window [class="Nautilus|Gmpc|Thunderbird|Gnome-system-monitor"] move position center # ;; scratchpad show
 
 set $i3_path $HOME/.config/i3
-bindsym $mod+a exec $i3_path/dropdown_calc          ;; [instance="dropdown_calc"] scratchpad show
-bindsym $mod+u exec $i3_path/dropdown_term          ;; [instance="dropdown_term"] scratchpad show
-bindsym $mod+m exec $i3_path/dropdown_musicplayer   ;; [class="Gmpc"] scratchpad show
-bindsym $mod+f exec $i3_path/dropdown_filemanager   ;; [class="Nautilus"] scratchpad show
-bindsym $mod+e exec $i3_path/dropdown_email         ;; [class="Thunderbird"] scratchpad show
+bindsym $mod+a exec --no-startup-id $i3_path/dropdown_calc          ;; [instance="dropdown_calc"] scratchpad show
+bindsym $mod+u exec --no-startup-id $i3_path/dropdown_term          ;; [instance="dropdown_term"] scratchpad show
+bindsym $mod+m exec --no-startup-id $i3_path/dropdown_musicplayer   ;; [class="Gmpc"] scratchpad show
+bindsym $mod+f exec --no-startup-id $i3_path/dropdown_filemanager   ;; [class="Nautilus"] scratchpad show
+bindsym $mod+e exec --no-startup-id $i3_path/dropdown_email         ;; [class="Thunderbird"] scratchpad show
+bindsym $mod+t exec --no-startup-id $i3_path/dropdown_sysmonitor    ;; [class="Gnome-system-monitor"] scratchpad show
 
 # #---Window Behaviors---# #
 # Default aesthetics
 default_border normal 3
 default_floating_border normal 3
 hide_edge_borders none
-gaps inner 5
-gaps outer 5
+gaps inner 10
+gaps outer 10
+
+# Gaps manipulation
+set $inner_reset gaps inner current set 10
+set $inner_inc   gaps inner current plus 2
+set $inner_dec   gaps inner current minus 2
+set $inner_zero  gaps inner current set 0
+
+set $outer_reset gaps outer current set 10
+set $outer_inc   gaps outer current plus 2
+set $outer_dec   gaps outer current minus 2
+set $outer_zero  gaps outer current set 0
+
+bindsym $mod+Control+Shift+0         $inner_reset
+bindsym $mod+Control+Shift+plus      $inner_dec
+bindsym $mod+Control+Shift+minus     $inner_inc
+bindsym $mod+Control+Shift+BackSpace $inner_zero
+
+bindsym $mod+Mod1+Shift+0         $outer_reset
+bindsym $mod+Mod1+Shift+plus      $outer_dec
+bindsym $mod+Mod1+Shift+minus     $outer_inc
+bindsym $mod+Mod1+Shift+BackSpace $outer_zero
+
+bindsym $mod+Control+Mod1+Shift+0         $inner_reset; $outer_reset
+bindsym $mod+Control+Mod1+Shift+plus      $inner_dec; $outer_dec
+bindsym $mod+Control+Mod1+Shift+minus     $inner_inc; $outer_inc
+bindsym $mod+Control+Mod1+Shift+BackSpace $inner_zero; $outer_zero
 
 # Titlebar
 font pango:Inconsolata 13
@@ -138,8 +165,8 @@ bindsym $mod+Shift+c	reload ;; restart
 bindsym $mod+Shift+x	exit
 
 # kill focused window
-bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$" class="^(?!Nautilus|Gmpc|Thunderbird).*$"] kill
-bindsym $mod+Shift+q	[con_id="__focused__" instance="^(?!dropdown_).*$" class="^(?!Nautilus|Gmpc|Thunderbird).*$"] kill
+bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$" class="^(?!Nautilus|Gmpc|Thunderbird|Gnome-system-monitor).*$"] kill
+bindsym $mod+Shift+q	[con_id="__focused__" instance="^(?!dropdown_).*$" class="^(?!Nautilus|Gmpc|Thunderbird|Gnome-system-monitor).*$"] kill
 
 # #---Focus Direction---#
 # don't allow window focus to "wrap around"
@@ -172,15 +199,16 @@ bindsym $mod+Return split horizontal; exec --no-startup-id st
 bindsym $mod+slash split vertical; exec --no-startup-id st
 
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+i exec --no-startup-id $HOME/.config/i3/rofi_emojimenu
+bindsym $mod+i exec --no-startup-id $HOME/.config/i3/menu_emoji
+bindsym $mod+o exec --no-startup-id $HOME/.config/i3/menu_unicode
 bindsym $mod+w exec --no-startup-id chromium
 
 # #---Special Fn/Misc keys---#
-bindsym XF86AudioMute		    exec --no-startup-id pactl set-sink-mute 0 toggle
-bindsym XF86AudioLowerVolume	exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioRaiseVolume	exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioMute		    exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioLowerVolume	exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioRaiseVolume	exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 
 bindsym XF86MonBrightnessDown	exec --no-startup-id xbacklight -dec 5
 bindsym XF86MonBrightnessUp	    exec --no-startup-id xbacklight -inc 5
 
-bindsym Print 			        exec --no-startup-id maim -u pic-full-"$(date '+%y%m%d-%H%M-%S').png"
+bindsym Print 			        exec --no-startup-id maim -u "$HOME/Pictures/Screenshots/pic-full-""$(date '+%y%m%d-%H%M-%S').png"

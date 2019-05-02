@@ -29,7 +29,7 @@ fetch_album_art() {
 
 	# get the cover image art
 	cover="$album_folder""/"`ls "$album_folder" | egrep "jpeg|jpg|png|gif" | head -n 1`;
-	convert "$cover" -resize "$pixels>x" "$output_path"
+	convert "$cover" -resize "$pixels""x""$pixels" "$output_path"
 
     echo "$output_path"
     exit 0
@@ -52,7 +52,7 @@ if [ -z "$OPTION" ]; then
 fi
 
 if [ "$OPTION" = "album_art" ]; then
-    fetch_album_art 150
+    fetch_album_art $2
     exit 0
 elif [ "$OPTION" = "mpd_status" ]; then
     check_mpd_status
