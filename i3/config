@@ -21,11 +21,12 @@ exec_always --no-startup-id feh --bg-fill $HOME/.config/wallpaper-day.png
 exec_always --no-startup-id $HOME/.config/polybar/launch
 exec_always --no-startup-id $HOME/.config/conky/launch
 exec_always --no-startup-id $HOME/.config/mpd/mpd_nowplaying
-exec_always --no-startup-id unagi &
-exec --no-startup-id pulseaudio -D
-exec --no-startup-id mpd
+exec_always --no-startup-id sleep 1 && unagi &
+#exec --no-startup-id pulseaudio -D
+#exec --no-startup-id mpd
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec --no-startup-id xset dpms 300
 
 # #---Color Palette---# #
@@ -70,15 +71,15 @@ gaps inner 10
 gaps outer 10
 
 # Gaps manipulation
-set $inner_reset gaps inner current set 10
-set $inner_inc   gaps inner current plus 2
-set $inner_dec   gaps inner current minus 2
-set $inner_zero  gaps inner current set 0
+set $inner_reset gaps inner all set 10
+set $inner_inc   gaps inner all plus 2
+set $inner_dec   gaps inner all minus 2
+set $inner_zero  gaps inner all set 0
 
-set $outer_reset gaps outer current set 10
-set $outer_inc   gaps outer current plus 2
-set $outer_dec   gaps outer current minus 2
-set $outer_zero  gaps outer current set 0
+set $outer_reset gaps outer all set 10
+set $outer_inc   gaps outer all plus 2
+set $outer_dec   gaps outer all minus 2
+set $outer_zero  gaps outer all set 0
 
 bindsym $mod+Control+Shift+0         $inner_reset
 bindsym $mod+Control+Shift+plus      $inner_dec
