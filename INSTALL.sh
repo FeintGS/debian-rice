@@ -71,6 +71,6 @@ cd $BUILD_PATH
 # Compton (tryone144's fork) installation
 
 # Other stuff I missed
-apt install mpd network-manager network-manager-gnome pulseaudio xbacklight thunderbird gnome-system-monitor gmpc tmux conky dunst mpv fonts-ubuntu fonts-ubuntu-console xclip zsh feh maim oomox libnotify-bin libnotify-dev libasound2 libasound2-dev tlp acpid udev libmpdclient-dev parted gparted gdisk fdisk mpc
+apt install mpd network-manager network-manager-gnome pulseaudio xbacklight thunderbird gnome-system-monitor gmpc tmux conky dunst mpv fonts-ubuntu fonts-ubuntu-console xclip zsh feh maim oomox libnotify-bin libnotify-dev libasound2 libasound2-dev tlp acpid udev libmpdclient-dev parted gparted gdisk fdisk mpc easytag easytag-nautilus
 
 # oomox theme editor
