@@ -6,6 +6,9 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
+mkdir $BUILD_PATH
+cd $BUILD_PATH
+
 # Basic prerequisites for setup
 apt install git
 
@@ -14,7 +17,7 @@ apt install xorg xbacklight xclip xcape x11-xkb-utils
 
 # User applications
 apt install dunst feh gmpc mpd mpv vim-gtk thunderbird rofi i3 conky \
-        chromium nautilus maim network-manager nm-applet
+        chromium nautilus maim network-manager
 
 # Useful command line tools
 apt install htop neofetch qalc exa imagemagick apt-file
@@ -30,6 +33,7 @@ apt install gcc make dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev \
         libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0-dev
 
 
+cd $BUILD_PATH
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps
 autoreconf --force --install
@@ -39,6 +43,7 @@ mkdir -p build && cd build/
 ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
 make -j$(nproc)
 make install
+cd $BUILD_PATH
 
 # Suckless Terminal installation
 git clone https://www.github.com/FeintGS/st
@@ -53,6 +58,7 @@ apt install build-essential git cmake cmake-data pkg-config python3-sphinx \
         libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev \
         libxcb-cursor-dev libasound2-dev libpulse-dev i3-wm libjsoncpp-dev \
         libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
+cd $BUILD_PATH
 git clone --recursive https://github.com/jaagr/polybar
 cd polybar
 mkdir build
@@ -60,5 +66,11 @@ cd build
 cmake ..
 make -j$(nproc)
 make install
+cd $BUILD_PATH
 
 # Compton (tryone144's fork) installation
+
+# Other stuff I missed
+apt install mpd network-manager network-manager-gnome pulseaudio xbacklight thunderbird gnome-system-monitor gmpc tmux conky dunst mpv fonts-ubuntu fonts-ubuntu-console xclip zsh feh maim oomox libnotify-bin libnotify-dev libasound2 libasound2-dev tlp acpid udev libmpdclient-dev parted gparted gdisk fdisk mpc
+
+# oomox theme editor
