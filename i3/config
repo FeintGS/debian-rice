@@ -110,7 +110,7 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 
-# Specific userspace applications that should be floating when open
+# Specific user programs that should float by default
 for_window [class="feh"] floating enable
 
 # File chooser dialog (default behavior: floating)
