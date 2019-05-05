@@ -112,6 +112,7 @@ for_window [window_type="menu"] floating enable
 
 # Specific user programs that should float by default
 for_window [class="feh"] floating enable
+for_window [class="Blueman-manager"] floating enable
 
 # File chooser dialog (default behavior: floating)
 for_window [window_role="GtkFileChooserDialog"] resize set 1000 600
