@@ -102,7 +102,7 @@ for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Chromium"] border pixel 1	# Disables the titlebar
 for_window [class="Firefox"] border pixel 1	# Disables the titlebar
 
-# Application windows which are usually designed by devs to be floating
+# Application windows which are usually designed by devs to float by default
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
