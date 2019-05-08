@@ -81,20 +81,20 @@ set $outer_inc   gaps outer all plus 2
 set $outer_dec   gaps outer all minus 2
 set $outer_zero  gaps outer all set 0
 
-bindsym $mod+Control+Shift+0         $inner_reset
-bindsym $mod+Control+Shift+plus      $inner_dec
-bindsym $mod+Control+Shift+minus     $inner_inc
-bindsym $mod+Control+Shift+BackSpace $inner_zero
+bindsym $mod+Control+0         $inner_reset
+bindsym $mod+Control+plus      $inner_dec
+bindsym $mod+Control+minus     $inner_inc
+bindsym $mod+Control+BackSpace $inner_zero
 
-bindsym $mod+Mod1+Shift+0         $outer_reset
-bindsym $mod+Mod1+Shift+plus      $outer_dec
-bindsym $mod+Mod1+Shift+minus     $outer_inc
-bindsym $mod+Mod1+Shift+BackSpace $outer_zero
+bindsym $mod+Mod1+0         $outer_reset
+bindsym $mod+Mod1+plus      $outer_dec
+bindsym $mod+Mod1+minus     $outer_inc
+bindsym $mod+Mod1+BackSpace $outer_zero
 
-bindsym $mod+Control+Mod1+Shift+0         $inner_reset; $outer_reset
-bindsym $mod+Control+Mod1+Shift+plus      $inner_dec; $outer_dec
-bindsym $mod+Control+Mod1+Shift+minus     $inner_inc; $outer_inc
-bindsym $mod+Control+Mod1+Shift+BackSpace $inner_zero; $outer_zero
+bindsym $mod+Control+Mod1+0         $inner_reset; $outer_reset
+bindsym $mod+Control+Mod1+plus      $inner_dec; $outer_dec
+bindsym $mod+Control+Mod1+minus     $inner_inc; $outer_inc
+bindsym $mod+Control+Mod1+BackSpace $inner_zero; $outer_zero
 
 # Titlebar
 font pango:Inconsolata 13
