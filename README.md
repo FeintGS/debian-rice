@@ -35,7 +35,7 @@
 ### Basic Controls
 
 <details>
-<summary><strong>Workspace management</strong></summary>
+<summary><strong>Workspace movement</strong></summary>
 	
 | Keybinding | Action |
 | :--------- | :----- |
@@ -44,7 +44,7 @@
 </details>
 
 <details>
-<summary><strong>Window management</strong></summary>
+<summary><strong>Window movement</strong></summary>
 	
 | Keybinding | Action |
 | :--------- | :----- |
