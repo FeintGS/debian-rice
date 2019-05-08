@@ -78,7 +78,7 @@
 <kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>0</kbd> | Reset to default inner gaps size
 <kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>-</kbd> | Shrink windows
 <kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>=</kbd> | Enlarge windows
-<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Backspace</kbd> | Reset to zero px inner gaps
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Backspace</kbd> | Zero pixel inner gaps
 </details>
 
 <details>
@@ -89,7 +89,7 @@
 <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd> | Reset to default outer gaps size
 <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> | Shrink windows
 <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>=</kbd> | Enlarge windows
-<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd> | Reset to zero px outer gaps
+<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd> | Zero pixel outer gaps
 </details>
 
 <details>
@@ -100,7 +100,7 @@
 <kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd> | Reset to default inner+outer gaps size
 <kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> | Shrink windows
 <kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>=</kbd> | Enlarge windows
-<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd> | Reset to zero px inner+outer gaps
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd> | Zero pixel inner+outer gaps
 </details>
 
 
