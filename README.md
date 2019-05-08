@@ -69,7 +69,7 @@
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Spacebar</kbd> | Toggle sticky on/off state for currently focused window
 </details>
 
-### Window Tiling Gaps
+### Window Border Margin (i.e. "Window Gaps") Sizing Adjustment
 <details>
 <summary><strong>Inner gaps only</strong></summary>
 	
