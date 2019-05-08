@@ -69,6 +69,41 @@
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Spacebar</kbd> | Toggle sticky on/off state for currently focused window
 </details>
 
+### Window Tiling Gaps
+<details>
+<summary><strong>Inner gaps only</strong></summary>
+	
+| Keybinding | Action |
+| :--------- | :----- |
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>0</kbd> | Reset to default inner gaps size
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>-</kbd> | Shrink windows
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>=</kbd> | Enlarge windows
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Backspace</kbd> | Reset to zero px inner gaps
+</details>
+
+<details>
+<summary><strong>Outer gaps only</strong></summary>
+	
+| Keybinding | Action |
+| :--------- | :----- |
+<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd> | Reset to default outer gaps size
+<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> | Shrink windows
+<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>=</kbd> | Enlarge windows
+<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd> | Reset to zero px outer gaps
+</details>
+
+<details>
+<summary><strong>Both inner and outer gaps</strong></summary>
+
+| Keybinding | Action |
+| :--------- | :----- |
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd> | Reset to default inner+outer gaps size
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> | Shrink windows
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>=</kbd> | Enlarge windows
+<kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd> | Reset to zero px inner+outer gaps
+</details>
+
+
 ### Applications
 
 <details>
