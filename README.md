@@ -45,7 +45,22 @@
 
 <details>
 <summary><strong>Window movement</strong></summary>
-	
+
+| Keybinding | Action |
+| :--------- | :----- |
+<kbd>Super</kbd> + <kbd>h</kbd> | Focus left window
+<kbd>Super</kbd> + <kbd>j</kbd> | Focus down window
+<kbd>Super</kbd> + <kbd>k</kbd> | Focus up window
+<kbd>Super</kbd> + <kbd>l</kbd> | Focus right window
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>h</kbd> | Swap with window left (tiled) / Move window left (floating)
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>j</kbd> | Swap with window down (tiled) / Move window down (floating)
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd> | Swap with window up (tiled) / Move window up (floating)
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>l</kbd> | Swap with window right (tiled) / Move window right (floating)
+</details>
+
+<details>
+<summary><strong>Manipulating the window state</strong></summary>
+
 | Keybinding | Action |
 | :--------- | :----- |
 <kbd>Super</kbd> + <kbd>q</kbd> | Kill focused window
