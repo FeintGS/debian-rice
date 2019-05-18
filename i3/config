@@ -96,6 +96,12 @@ bindsym $mod+Control+Mod1+plus      $inner_dec; $outer_dec
 bindsym $mod+Control+Mod1+minus     $inner_inc; $outer_inc
 bindsym $mod+Control+Mod1+BackSpace $inner_zero; $outer_zero
 
+# Window resizing
+bindsym $mod+Mod1+h exec $i3_path/win_resize up
+bindsym $mod+Mod1+j exec $i3_path/win_resize down
+bindsym $mod+Mod1+k exec $i3_path/win_resize left
+bindsym $mod+Mod1+l exec $i3_path/win_resize right
+
 # Titlebar
 font pango:Inconsolata 13
 for_window [class=".*"] title_format "<b>%title</b>"

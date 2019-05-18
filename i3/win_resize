@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+DIST="15px"
+
+case "$1" in
+    up)
+        i3-msg resize grow up $DIST || i3-msg resize shrink down $DIST
+        ;;
+    down)
+        i3-msg resize shrink up $DIST || i3-msg resize grow down $DIST
+        ;;
+    left)
+        i3-msg resize shrink right $DIST || i3-msg resize grow left $DIST
+        ;;
+    right)
+        i3-msg resize grow right $DIST || i3-msg resize shrink left $DIST
+        ;;
+esac
