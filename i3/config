@@ -22,8 +22,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch
 exec_always --no-startup-id $HOME/.config/conky/launch
 exec_always --no-startup-id $HOME/.config/mpd/mpd_nowplaying
 exec_always --no-startup-id sleep 1 && unagi &
-#exec --no-startup-id pulseaudio -D
-#exec --no-startup-id mpd
+exec --no-startup-id pulseaudio --start
+exec --no-startup-id mpd
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
