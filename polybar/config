@@ -40,7 +40,6 @@ foreground-disabled = ${self.pink_translucent}
 foreground-urgent = ${self.emergency}
 
 [bar/top]
-monitor = eDP1
 width = 100%
 height = 25
 fixed-center = false
