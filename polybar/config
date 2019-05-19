@@ -233,8 +233,6 @@ label = %date% %time%
 label-background = ${colors.background-selected}
 label-foreground = ${colors.foreground-selected}
 
-date-alt = "asdf"
-
 [module/battery-combined-udev]
 type = custom/script
 exec = ~/.config/polybar/battery-combined-udev.sh
