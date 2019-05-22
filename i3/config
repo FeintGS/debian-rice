@@ -71,14 +71,14 @@ gaps inner 10
 gaps outer 10
 
 # Gaps manipulation
-set $inner_reset gaps inner all set 10
-set $inner_inc   gaps inner all plus 2
-set $inner_dec   gaps inner all minus 2
+set $inner_reset gaps inner all set 5
+set $inner_inc   gaps inner all plus 5
+set $inner_dec   gaps inner all minus 5
 set $inner_zero  gaps inner all set 0
 
-set $outer_reset gaps outer all set 10
-set $outer_inc   gaps outer all plus 2
-set $outer_dec   gaps outer all minus 2
+set $outer_reset gaps outer all set 5
+set $outer_inc   gaps outer all plus 5
+set $outer_dec   gaps outer all minus 5
 set $outer_zero  gaps outer all set 0
 
 bindsym $mod+Control+0         $inner_reset
