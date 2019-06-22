@@ -10,29 +10,40 @@ mkdir $BUILD_PATH
 cd $BUILD_PATH
 
 # Basic prerequisites for setup
-apt install git
+apt -y install git
 
-# X11 graphical stack
-apt install xorg xbacklight xclip xcape x11-xkb-utils
+# X11 graphical stack / Desktop system & environment
+apt -y install xorg xbacklight xclip xcape x11-xkb-utils
 
-# User applications
-apt install dunst feh gmpc mpd mpv vim-gtk thunderbird rofi i3 conky \
-        chromium nautilus maim network-manager
 
-# Useful command line tools
-apt install htop neofetch qalc exa imagemagick apt-file
 
-# Fonts
-apt install fonts-inconsolata unifont fonts-noto-color-emoji fonts-noto-core fonts-noto-extra
+
+apt -y install conky dunst i3 rofi libnotify-bin libnotify-dev libmpdclient-dev nautilus gnome-system-monitor pulseaudio libasound2 libasound2-dev
+
+# Shell and terminal utilities
+apt -y install zsh htop neofetch qalc exa imagemagick apt-file maim vim
+
+# Mandatory user applications for the recommended best experience
+apt -y install thunderbird chromium vim-gtk
+
+# Optional nice-to-have user applications
+apt -y tmux easytag easytag-nautilus network-manager-gnome tmux
+
+# System administration
+apt install parted gparted fdisk gdisk xdotool acpid
+
+
+apt -y install tlp
+
+# System fonts
+apt -y install fonts-inconsolata unifont fonts-noto-color-emoji fonts-noto-core fonts-noto-extra fonts-ubuntu fonts-ubuntu-console
 
 # i3-gaps installation
-apt install gcc make dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev \
+apt -y install i3 gcc make dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev \
         libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev \
         libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev    \
         libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev \
         libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0-dev
-
-
 cd $BUILD_PATH
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps
@@ -67,10 +78,3 @@ cmake ..
 make -j$(nproc)
 make install
 cd $BUILD_PATH
-
-# Compton (tryone144's fork) installation
-
-# Other stuff I missed
-apt install mpd network-manager network-manager-gnome pulseaudio xbacklight thunderbird gnome-system-monitor gmpc tmux conky dunst mpv fonts-ubuntu fonts-ubuntu-console xclip zsh feh maim oomox libnotify-bin libnotify-dev libasound2 libasound2-dev tlp acpid udev libmpdclient-dev parted gparted gdisk fdisk mpc easytag easytag-nautilus rsync xdotool
-
-# oomox theme editor
