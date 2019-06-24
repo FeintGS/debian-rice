@@ -2,6 +2,11 @@
 *
 
 !.gitignore
+!INSTALL.sh
+!LICENSE.md
+!README.md
+!wallpaper-beach.png
+!wallpaper-day.png
 
 !compton/compton.conf
 !compton/launch
