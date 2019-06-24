@@ -210,7 +210,7 @@ bindsym $mod+slash split vertical; exec --no-startup-id st
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+i exec --no-startup-id $HOME/.config/i3/menu_emoji
 bindsym $mod+o exec --no-startup-id $HOME/.config/i3/menu_unicode
-bindsym $mod+w exec --no-startup-id chromium
+bindsym $mod+w exec --no-startup-id firefox
 
 # #---Special Fn/Misc keys---#
 bindsym XF86AudioMute		    exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
