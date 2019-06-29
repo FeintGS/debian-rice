@@ -36,7 +36,7 @@ apt install parted gparted fdisk gdisk xdotool acpid
 apt -y install tlp
 
 # System fonts
-apt -y install fonts-inconsolata unifont fonts-noto-color-emoji fonts-noto-core fonts-noto-extra fonts-ubuntu fonts-ubuntu-console
+apt -y install fonts-inconsolata unifont fonts-noto-color-emoji fonts-noto-core fonts-noto-extra
 
 # i3-gaps installation
 apt -y install i3 gcc make dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev \
