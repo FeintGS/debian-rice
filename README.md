@@ -21,7 +21,7 @@
 	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, Soon™
 </div>
 <div align="center">
-	![Project demo image](demo.jpeg)
+	![Project demo image](/demo.jpeg)
 </div>
 
 # Features
