@@ -23,6 +23,7 @@
 <div align="center">
 	![Project demo image](demo.jpeg)
 </div>
+
 # Features
 
 * Features a highly efficient and ergonomic workflow system, designed to eliminate unnecessary wrist-related movements and pain
