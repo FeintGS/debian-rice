@@ -20,8 +20,9 @@
 <div align="center">
 	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, Soon™
 </div>
-![Project demo image](demo.jpeg)
-
+<div align="center">
+	![Project demo image](demo.jpeg)
+</div>
 # Features
 
 * Features a highly efficient and ergonomic workflow system, designed to eliminate unnecessary wrist-related movements and pain
