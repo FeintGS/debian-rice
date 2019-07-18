@@ -36,7 +36,7 @@
 
 ### Basic Controls
 
-<details>
+<details open>
 <summary><strong>Workspace movement</strong></summary>
 	
 | Keybinding | Action |
@@ -45,7 +45,7 @@
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd> - <kbd>9</kbd> | Move to workspace N
 </details>
 
-<details>
+<details open>
 <summary><strong>Window movement</strong></summary>
 
 | Keybinding | Action |
@@ -60,7 +60,7 @@
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>l</kbd> | Swap with window right (tiled) / Move window right (floating)
 </details>
 
-<details>
+<details open>
 <summary><strong>Manipulating the window state</strong></summary>
 
 | Keybinding | Action |
@@ -72,7 +72,7 @@
 </details>
 
 ### Window Border Margin (i.e. "Window Gaps") Sizing Adjustment
-<details>
+<details open>
 <summary><strong>Inner gaps only</strong></summary>
 	
 | Keybinding | Action |
@@ -83,7 +83,7 @@
 <kbd>Ctrl</kbd> + <kbd>Super</kbd> + <kbd>Backspace</kbd> | Zero pixel inner gaps
 </details>
 
-<details>
+<details open>
 <summary><strong>Outer gaps only</strong></summary>
 	
 | Keybinding | Action |
@@ -94,7 +94,7 @@
 <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd> | Zero pixel outer gaps
 </details>
 
-<details>
+<details open>
 <summary><strong>Both inner and outer gaps</strong></summary>
 
 | Keybinding | Action |
@@ -108,7 +108,7 @@
 
 ### Applications
 
-<details>
+<details open>
 <summary><strong>Pop-up utility programs</strong></summary>
 	
 | Keybinding | Action |
@@ -121,7 +121,7 @@
 <kbd>Super</kbd> + <kbd>t</kbd> | GNOME Resource Monitor
 </details>
 
-<details>
+<details open>
 <summary><strong>Rofi Dmenu</strong></summary>
 
 | Keybinding | Action |
