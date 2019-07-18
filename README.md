@@ -20,7 +20,7 @@
 <div align="center">
 	Ambitious project with plans to evolve into its own standalone GNU/Linux distribution, Soon™
 </div>
-
+</br>
 ![Project demo image](demo.jpeg)
 
 # Features
