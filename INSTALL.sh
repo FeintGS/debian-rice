@@ -14,10 +14,6 @@ apt -y install git
 
 # X11 graphical stack / Desktop system & environment
 apt -y install xorg xbacklight xclip xcape x11-xkb-utils
-
-
-
-
 apt -y install conky dunst i3 rofi libnotify-bin libnotify-dev libmpdclient-dev nautilus gnome-system-monitor pulseaudio libasound2 libasound2-dev
 
 # Shell and terminal utilities
@@ -31,8 +27,6 @@ apt -y tmux easytag easytag-nautilus network-manager-gnome tmux
 
 # System administration
 apt -y install parted gparted fdisk gdisk xdotool acpid
-
-
 apt -y install tlp
 
 # System fonts
