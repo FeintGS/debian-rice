@@ -9,6 +9,7 @@
 !wallpaper-beach.png
 !wallpaper-day.png
 
+!.fonts/*
 !compton/compton.conf
 !compton/launch
 !conky/date_rc
