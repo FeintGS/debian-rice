@@ -23,7 +23,7 @@ apt -y install zsh htop neofetch qalc exa imagemagick apt-file maim vim
 apt -y install thunderbird chromium vim-gtk feh
 
 # Optional nice-to-have user applications
-apt -y tmux easytag easytag-nautilus network-manager-gnome tmux
+apt -y install easytag easytag-nautilus network-manager-gnome tmux
 
 # System administration
 apt -y install parted gparted fdisk gdisk xdotool acpid
