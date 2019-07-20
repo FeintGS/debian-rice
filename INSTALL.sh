@@ -20,7 +20,7 @@ apt -y install conky compton dunst i3 rofi libnotify-bin libnotify-dev libmpdcli
 apt -y install zsh htop neofetch qalc exa imagemagick apt-file maim vim
 
 # Mandatory user applications for the recommended best experience
-apt -y install thunderbird chromium vim-gtk
+apt -y install thunderbird chromium vim-gtk feh
 
 # Optional nice-to-have user applications
 apt -y tmux easytag easytag-nautilus network-manager-gnome tmux
