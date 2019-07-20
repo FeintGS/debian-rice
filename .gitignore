@@ -40,7 +40,6 @@
 !mpd/placeholder.png
 !neofetch/config
 !neofetch/config.conf
-!polybar/battery-combined-udev.pid
 !polybar/battery-combined-udev.sh
 !polybar/click-handlers
 !polybar/config
