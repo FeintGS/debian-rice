@@ -30,7 +30,7 @@ apt -y install thunderbird chromium vim-gtk
 apt -y tmux easytag easytag-nautilus network-manager-gnome tmux
 
 # System administration
-apt install parted gparted fdisk gdisk xdotool acpid
+apt -y install parted gparted fdisk gdisk xdotool acpid
 
 
 apt -y install tlp
