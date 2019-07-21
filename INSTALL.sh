@@ -77,6 +77,7 @@ cd $BUILD_PATH
 # Copy and paste dotfiles into ~/.config folder
 cd $DOTFILES_PATH
 git clone https://github.com/feintgs/debian-rice .
+yes | cp .Xresources .profile .shell_aliases .tmux.conf .vimrc .xinitrc .xkb_remap .z* ~/
 yes | cp -r * ~/.config
 cd $DOTFILES_PATH
 
