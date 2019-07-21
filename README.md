@@ -154,7 +154,7 @@
 </details>
 
 # Contributing
-Pull requests and issues are welcome and appreciated.
+Pull requests and issues are always welcome! Feel free to ask me questions and share feedback.
 
 # License
 Please see [LICENSE.md](LICENSE.md) for details.
