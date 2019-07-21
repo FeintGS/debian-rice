@@ -14,7 +14,7 @@ apt -y install git
 
 # X11 graphical stack / Desktop system & environment
 apt -y install xorg xbacklight xclip xcape x11-xkb-utils
-apt -y install conky compton dunst i3 rofi libnotify-bin libnotify-dev libmpdclient-dev nautilus gnome-system-monitor pulseaudio libasound2 libasound2-dev
+apt -y install conky compton dunst i3 rofi libnotify-bin libnotify-dev libmpdclient-dev nautilus gnome-system-monitor pulseaudio libasound2 libasound2-dev mate-polkit
 
 # Shell and terminal utilities
 apt -y install zsh htop neofetch qalc exa imagemagick apt-file maim vim

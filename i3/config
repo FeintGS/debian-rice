@@ -30,6 +30,9 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id xset dpms 300
 
+# #---Giving applications the ability to run as root---# #
+exec_always --no-startup-id /usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1
+
 # #---Color Palette---# #
 set $main	#FF69B4
 set $alt	#FFFAFF
@@ -122,7 +125,7 @@ for_window [class="feh"] floating enable
 for_window [class="Blueman-manager"] floating enable
 
 # File chooser dialog (default behavior: floating)
-for_window [window_role="GtkFileChooserDialog"] resize set 1000 600
+for_window [window_role="GtkFileChooserDialog"] resize set 1000 800
 for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [window_role="GtkFileChooserDialog"] floating enable
 
