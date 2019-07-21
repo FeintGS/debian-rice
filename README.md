@@ -132,6 +132,9 @@
 </details>
 
 # Dependencies
+<details>
+<summary><strong>Click to see dependencies</strong></summary>
+
 | Debian Package | Description | Upstream |
 | :------------- | :---------- | :------- |
 | [Rofi](https://packages.debian.org/buster/rofi) | A window switcher, Application launcher and dmenu replacement | https://github.com/davatorium/rofi |
@@ -147,3 +150,11 @@
 | [gmpc](https://packages.debian.org/buster/gmpc) | GNOME Music Player Client (graphical interface to MPD) | https://gmpclient.org/ |
 | [nautilus](https://packages.debian.org/buster/nautilus) | File manager and graphical shell for GNOME | https://gitlab.gnome.org/GNOME/Nautilus |
 | [mpv](https://packages.debian.org/buster/mpv) | Video player based on MPlayer/mplayer2 | https://github.com/mpv-player/mpv |
+
+</details>
+
+# Contributing
+Pull requests and issues are welcome and appreciated.
+
+# License
+Please see [LICENSE.md](LICENSE.md) for details.
