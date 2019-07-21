@@ -46,6 +46,14 @@
 </details>
 
 <details open>
+<summary><strong>Resizing windows</strong></summary>
+	
+| Keybinding | Action |
+| :--------- | :----- |
+<kbd>Super</kbd> + Left-click drag | Expand or shrink window
+</details>
+
+<details open>
 <summary><strong>Window movement</strong></summary>
 
 | Keybinding | Action |
