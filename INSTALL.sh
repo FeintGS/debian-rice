@@ -1,5 +1,6 @@
 #!/bin/sh
 BUILD_PATH="$PWD/build"
+DOTFILES_PATH="$PWD/dotfiles"
 
 if [[ $EUID -ne 0 ]]; then
     echo "This script must be run as root"
@@ -72,3 +73,15 @@ cmake ..
 make -j$(nproc)
 make install
 cd $BUILD_PATH
+
+# Copy and paste dotfiles into ~/.config folder
+cd $DOTFILES_PATH
+git clone https://github.com/feintgs/debian-rice .
+yes | cp -r * ~/.config
+cd $DOTFILES_PATH
+
+# Final clean-up task
+cd $BUILD_PATH/..
+rm -rf $BUILD_PATH
+cd $DOTFILES_PATH/..
+rm -rf $DOTFILES_PATH
